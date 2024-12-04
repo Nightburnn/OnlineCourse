@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.terms .nav-tabs {
+justify-content: center;
+border-bottom: 2px solid #26355D;
+gap: 2px;
+}
+
+.terms  .tab-content p{
+color: #03001C; font-size: 18px; font-family: 'Roboto'; font-weight: 400;
+}
+.terms  button:focus{
+outline: none;
+border: none;
+}
+.terms  .nav-tabs .nav-link {
+
+background: #26355D; border: 1px solid #26355D;
+color: white; font-size: 23px; font-family: Roboto; font-weight: 600;
+border-radius: 1px;
+min-width: 250px;
+text-align: center;
+
+}
+.terms  .nav-tabs .nav-link.active {
+
+background-color: #fff;
+border: 1px solid #26355D;
+color: #26355D; font-size: 23px;
+font-family: 'Roboto'; font-weight: 600;
+}
+@media (max-width: 768px) {
+.terms   .nav-tabs .nav-link {
+min-width: auto;
+width: 100%;
+}
+
+.terms   .nav-tabs{
+gap: 10px;
+}
+
+.terms  .nav-tabs .nav-link {
+
+background: #26355D; border: 1px solid #26355D;
+color: white; font-size: 18px; font-family: Roboto; font-weight: 700;
+border-radius: 1px;
+min-width: 200px;
+text-align: center;
+}
+.terms  .nav-tabs .nav-link.active {
+
+background-color: #fff;
+border: 1px solid #26355D;
+color: #26355D; font-size: 18px;
+font-family: 'Roboto'; font-weight: 600;
+}

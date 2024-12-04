@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edulexi</title>
+   <!-- bootstrap -->
+  <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+
+  <!-- slick-slider -->
+  <link rel="stylesheet" href="assets/vendors/slick-slider/slick/slick.css" />
+  <link rel="stylesheet" href="assets/vendors/slick-slider/slick/slick-theme.css" />
+
+   <!-- fontawesome -->
+   <link rel="stylesheet" href="./assets/vendors/fontawesome/css/all.min.css" />
+     <!-- custom css -->
+  <link rel="stylesheet" href="./assets/css/common.css?v=1.0" />
+  <link rel="stylesheet" href="./assets/css/home.css?v=1.0" />
+  <link rel="stylesheet" href="./assets/css/login.css" />
+
+    
+</head>
+<body>
+    <div id="main">
+ <!-- header logged In -->
+ <header class="header">
+    <section class="topnav bg-purple py-2 fm">
+      <div class="container-xl">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="fm white mb-0">All courses 20% off for Lagosians!</p>
+
+          <div class="d-md-flex d-none gap-lg-5">
+            <a href="tel:(234) 902-180-1802"
+              class="text-decoration-none text-white transition d-flex align-items-center gap-2 me-4 fm">
+              <i class="fa-brands fa-whatsapp fs-4"></i>
+              (234) 902-180-1802
+            </a>
+
+            <a href="mailto:(234) 902-180-1802"
+              class="text-decoration-none text-white transition d-flex align-items-center gap-2 fm">
+              <i class="fa-regular fa-envelope fs-4"></i>
+              address@gmail.com
+            </a>
+            </div>
+
+          <div class="d-md-flex d-none gap-2 align-items-center">
+            <a href="" class="text-white text-decoration-none d-flex align-items-center"><img
+                src="./assets/images/icons/facebook.svg" alt="" class="social-icon" /></a>
+            <a href="" class="text-white text-decoration-none d-flex align-items-center"><img
+                src="./assets/images/icons/twitter.svg" alt="" class="social-icon" /></a>
+            <a href="" class="text-white text-decoration-none d-flex align-items-center"><img
+                src="./assets/images/icons/instagram.svg" alt="" class="social-icon" /></a>
+            <a href="" class="text-white text-decoration-none d-flex align-items-center"><img
+                src="./assets/images/icons/linkedin.svg" alt="" class="social-icon" /></a>
+          </div>
+          </div>
+      </div>
+      </section>
+
+    <section class="midnav bg-white fm py-2">
+      <div class="container-xl py-1">
+        <div class="d-flex align-items-center gap-lg-4 gap-3 justify-content-md-start justify-content-between">
+          <i class="fa-solid fa-bars fs-5 me-4 d-md-none pointer-event" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvas1" aria-controls="offcanvas1"></i>
+          <a href="./index.html">
+            <img src="./assets/images/logo.svg" alt="" class="logo" />
+          </a>
+
+          <div class="midnav__search d-md-flex d-none align-items-center gap-4">
+            <img src="./assets/images/icons/search.svg" alt="" class="" />
+            <input type="search" placeholder="Search for anything" id="input" class="midnav__search--input w-100" />
+            </div>
+
+          <div class="d-flex gap-xxl-5 gap-md-4">
+            <div class="d-flex align-items-center gap-3">
+              <a href="./search-result.html" class="text-decoration-none main transition fm nowrap d-lg-block d-none">Create A Course</a>
+              <a href="#" class="text-decoration-none main transition fm nowrap d-md-block d-none">My Learning</a>
+              </div>
+
+            <div class="d-flex align-items-center gap-3">
+              <i class="fa-solid fa-magnifying-glass fs-5 main pointer d-md-none" id="search"></i>
+              <a href="#"><img src="./assets/images/icons/cart.svg" alt="" class="icon-cart" /></a>
+
+              <button class="white--btn transition fm d-md-block d-none nowrap">
+                <a href="login.html">Log In</a>
+              </button>
+              <button class="main--btn transition fm d-md-block d-none nowrap">
+               <a href="signUp.html">Sign Up</a> 
+              </button>
+              </div>
+              </div>
+              </div>
+              </div>
+              </section>
+
+    <section class="bottomnav bg-dark py-2 d-md-block d-none position-relative">
+      <div class="container-xl">
+        <ul class="list-unstyled d-flex justify-content-around m-0">
+          <li class="text-white bottomnav__item pointer" data-target="development">
+            Development
+          </li>
+          <li class="text-white bottomnav__item pointer" data-target="business">
+            Business
+          </li>
+          <li class="text-white bottomnav__item pointer" data-target="finance">
+            Finance & Accounting
+          </li>
+          <li class="text-white bottomnav__item pointer" data-target="it">
+            IT & Software
+          </li>
+          <li class="text-white bottomnav__item pointer" data-target="design">
+            Design
+          </li>
+          <li class="text-white bottomnav__item pointer" data-target="marketing">
+            Marketing
+          </li>
+          <li class="text-white bottomnav__item pointer" data-target="health">
+            Health & Fitness
+          </li>
+          <li class="text-white bottomnav__item pointer" data-target="music">
+            Music
+          </li>
+          <li class="text-white bottomnav__item pointer" data-target="office">
+            Office Productivity
+          </li>
+          </ul>
+          </div>
+          </section>
+
+    <section>
+      <div class="dropnav py-2" id="development">
+      <div class="container-xl">
+        <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+          <li class="text-black bottomnav__item">
+            <a href="#" class="dropnav__item hover-purple text-decoration-none">Microsoft</a>
+            </li>
+            <li class="text-black bottomnav__item">
+            <a href="#" class="dropnav__item hover-purple text-decoration-none">Apple</a>
+            </li>
+            <li class="text-black bottomnav__item">
+            <a href="#" class="dropnav__item hover-purple text-decoration-none">Google</a>
+            </li>
+            <li class="text-black bottomnav__item">
+            <a href="#" class="dropnav__item hover-purple text-decoration-none">Oracle</a>
+            </li>
+            </ul>
+            </div>
+            </div>
+
+    <div class="dropnav py-2" id="business">
+      <div class="container-xl">
+        <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+          <li class="text-black bottomnav__item">
+            <a href="#" class="dropnav__item hover-purple text-decoration-none">Business 1</a>
+            </li>
+            <li class="text-black bottomnav__item">
+            <a href="#" class="dropnav__item hover-purple text-decoration-none">business 2</a>
+            </li>
+            <li class="text-black bottomnav__item">
+            <a href="#" class="dropnav__item hover-purple text-decoration-none">business 3</a>
+            </li>
+            </ul>
+            </div>
+            </div>
+
+    <div class="dropnav py-2" id="finance">
+      <div class="container-xl">
+        <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+          <li class="text-black bottomnav__item">
+            <a href="#" class="dropnav__item hover-purple text-decoration-none">finance 1</a>
+            </li>
+            <li class="text-black bottomnav__item">
+            <a href="#" class="dropnav__item hover-purple text-decoration-none">finance 2</a>
+            </li>
+            <li class="text-black bottomnav__item">
+            <a href="#" class="dropnav__item hover-purple text-decoration-none">finance 3</a>
+            </li>
+            </ul>
+            </div>
+            </div>
+
+    <div class="dropnav py-2" id="it">
+      <div class="container-xl">
+        <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+          <li class="text-black bottomnav__item">
+            <a href="#" class="dropnav__item hover-purple text-decoration-none">it 1</a>
+            </li>
+            <li class="text-black bottomnav__item">
+            <a href="#" class="dropnav__item hover-purple text-decoration-none">it 2</a>
+            </li>
+            </ul>
+            </div>
+            </div>
+
+    <div class="dropnav py-2" id="design">
+      <div class="container-xl">
+        <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+          <li class="text-black bottomnav__item">
+            <a href="#" class="dropnav__item hover-purple text-decoration-none">design 1</a>
+            </li>
+            <li class="text-black bottomnav__item">
+            <a href="#" class="dropnav__item hover-purple text-decoration-none">design 2</a>
+            </li>
+            </ul>
+            </div>
+            </div>
+
+    <div class="dropnav py-2" id="marketing">
+      <div class="container-xl">
+        <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+          <li class="text-black bottomnav__item">
+            <a href="#" class="dropnav__item hover-purple text-decoration-none">marketing 1</a>
+            </li>
+            <li class="text-black bottomnav__item">
+            <a href="#" class="dropnav__item hover-purple text-decoration-none">marketing 2</a>
+            </li>
+            </ul>
+            </div>
+            </div>
+
+    <div class="dropnav py-2" id="health">
+      <div class="container-xl">
+        <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+          <li class="text-black bottomnav__item">
+            <a href="#" class="dropnav__item hover-purple text-decoration-none">health 1</a>
+            </li>
+            <li class="text-black bottomnav__item">
+            <a href="#" class="dropnav__item hover-purple text-decoration-none">health 2</a>
+            </li>
+            </ul>
+            </div>
+            </div>
+
+    <div class="dropnav py-2" id="music">
+      <div class="container-xl">
+        <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+          <li class="text-black bottomnav__item">
+            <a href="#" class="dropnav__item hover-purple text-decoration-none">music 1</a>
+            </li>
+            <li class="text-black bottomnav__item">
+            <a href="#" class="dropnav__item hover-purple text-decoration-none">music 2</a>
+            </li>
+            </ul>
+            </div>
+            </div>
+
+    <div class="dropnav py-2" id="office">
+      <div class="container-xl">
+        <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+          <li class="text-black bottomnav__item">
+            <a href="#" class="dropnav__item hover-purple text-decoration-none">office 1</a>
+            </li>
+            <li class="text-black bottomnav__item">
+            <a href="#" class="dropnav__item hover-purple text-decoration-none">office 2</a>
+            </li>
+            </ul>
+            </div>
+            </div>
+    </section>
+
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas1" aria-labelledby="offcanvas1Label"
+      data-bs-backdrop="true">
+      <button class="offcanvas-btn rounded-circle d-flex align-items-center justify-content-center"
+        data-bs-dismiss="offcanvas" aria-label="Close">
+        <i class="fa-solid fa-xmark darkGrey fs-5"></i>
+      </button>
+      <div class="position-relative overflow-hidden h-100">
+        <div class="offcanvas-body p-0 h-100">
+          <ul class="list-unstyled offcanvas-padding border-bottom mb-0">
+            <li class="mb-2">
+              <a href="login.html" class="fm font-14 purple purple-hover text-decoration-none">Log In</a>
+              </li>
+              <li class="mb-1">
+              <a href="signUp.html" class="fm font-14 purple purple-hover text-decoration-none">Sign Up</a>
+              </li>
+              </ul>
+
+          <div class="offcanvas-padding mt-1 border-bottom">
+            <p class="fm text-dark darkGrey fw-semibold font-12">
+              Most Popular
+            </p>
+            <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+              <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuDevelopment">
+                Development
+                <i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+              </li>
+              <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuBusiness">
+                Business<i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+              </li>
+              <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuAccounting">
+                Finance & Accounting<i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+              </li>
+              <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuIT">
+                IT & Software<i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+              </li>
+              <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuDesign">
+                Design<i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+              </li>
+              <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuMarketing">
+                Marketing<i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+              </li>
+              <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuHealth">
+                Health & Fitness<i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+              </li>
+              <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuMusic">
+                Music<i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+              </li>
+              <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuOffice">
+                Office Productivity<i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+              </li>
+              </ul>
+              </div>
+              
+              <div class="offcanvas-padding mt-2">
+                <p class="fm text-dark darkGrey fw-semibold font-12">Support</p>
+                <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                  <li>
+                    <a href="#" class="fm font-14 dark text-decoration-none">Helpdesk</a>
+                  </li>
+                  <li>
+                    <a href="./search-result.html" class="fm font-14 dark text-decoration-none">Create a Course</a>
+                  </li>
+                </ul>
+              </div>
+              </div>
+
+        <!-- overlay menu -->
+        <div class="offcanvas-overlay position-absolute bg-white fm" id="overlayMenu">
+          <div class="d-flex gap-3 offcanvas-padding py-3 align-items-center offcanvas-overlay__top">
+            <i class="fa-solid fa-chevron-left pointer" id="backButton"></i>
+            <p class="fm dark font-14 mb-0">Menu</p>
+          </div>
+
+          <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="developmentMenu">
+            <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Microsoft</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Apple</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Google</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Oracle</a>
+              </li>
+              </ul>
+
+          <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="businessMenu">
+            <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Business 1</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Business 2</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Business 3</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Business 4</a>
+              </li>
+              </ul>
+
+          <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="accountingMenu">
+            <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Accounting 1</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Accounting 2</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Accounting 3</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Accounting 4</a>
+              </li>
+              </ul>
+
+          <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="itMenu">
+            <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">IT 1</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">IT 2</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">IT 3</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">IT 4</a>
+              </li>
+              </ul>
+
+          <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="designMenu">
+            <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Design 1</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Design 2</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Design 3</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Design 4</a>
+              </li>
+              </ul>
+
+          <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="marketingMenu">
+            <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Marketing 1</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Marketing 2</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Marketing 3</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Marketing 4</a>
+              </li>
+              </ul>
+
+          <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="healthMenu">
+            <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Health 1</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Health 2</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Health 3</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Health 4</a>
+              </li>
+              </ul>
+
+          <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="musicMenu">
+            <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Music 1</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Music 2</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Music 3</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Music 4</a>
+              </li>
+              </ul>
+
+          <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="officeMenu">
+            <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Office 1</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Office 2</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Office 3</a>
+              </li>
+              <li>
+              <a href="#" class="fm font-14 dark text-decoration-none">Office 4</a>
+              </li>
+              </ul>
+              </div>
+              </div>
+              </div>
+              </header>
+    
+   
+
+    <div class="login-container mt-5 pb-3">
+        <div class="login-box">
+          <div class="login-image-container">
+            <img src="./assets/images/login.png" alt="Placeholder Image" class="login-image">
+          </div>
+          <div class="login-form-container">
+            <h2 class="text-center h2">Log in to keep up with your<br> learning goals</h2>
+            <form>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                  </div>
+                  <input type="email" class="form-control" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fas fa-lock"></i>
+                    </span>
+                  </div>
+                  <input type="password" class="form-control password-input" placeholder="Password">
+            <div class="input-group-append">
+              <button type="button" class="btn toggle-password">
+                <i class="fas fa-eye"></i>
+              </button>
+                  </div>
+                </div>
+              </div>
+              <div class="forgot-password">
+                <a href="forgot.html" class="text-muted">Forgot your password?</a>
+              </div>
+              <button type="submit" class="btn btn-block">Login</button>
+            </form>
+            <div class="divider">
+              <hr>
+              <span>Other login options</span>
+              <hr>
+            </div>
+            <div class="other-logins">
+              <button><img src="assets/images/google.png" alt="Google"></button>
+              <button><img src="assets/images/facebook.png" alt="Facebook"></button>
+            </div>
+            <p class="footer-text">Don't have an account? <a href="signUp.html" class="dont">Sign up</a></p>
+          </div>
+        </div>
+      </div>
+
+       <!-- info bottom-->
+    <section class="pb-3">
+        <div class="container-xl mt-5">
+          <div class="info bg-main py-3 px-lg-5 px-3 d-flex justify-content-between align-items-center flex-wrap gap-3">
+            <p class="fm mb-0 text-white">
+              Ready to start? Our Android & iOS Apps is actively a work in
+              progress!
+            </p>
+  
+            <div class="d-flex gap-2">
+              <button class="bg-transparent border-0">
+                <img src="./assets/images/icons/googleplay.svg" alt="" />
+              </button>
+              <button class="bg-transparent border-0">
+                <img src="./assets/images/icons/appstore.svg" alt="" class="img-fluid" />
+                </button>
+                </div>
+                </div>
+                </div>
+                </section>
+    
+       <!-- footer -->
+    <footer class="footer mt-md-5">
+        <section class="footer-top bg-dark py-3 border-bottom">
+          <div class="container-xl d-flex justify-content-between align-items-center gap-3 flex-wrap">
+            <p class="fm text-white mb-0 fs-5">
+              Best Supporters of EDULEXI for in-demand career skills.
+            </p>
+  
+            <div class="d-flex flex-wrap">
+              <img src="./assets/images/icons/eventbrite.svg" alt="" class="footer-top__company1" />
+              <img src="./assets/images/icons/nasdaq.svg" alt="" class="footer-top__company2" />
+              </div>
+              </div>
+        </section>
+  
+        <section class="footer-mid py-sm-5 py-4 bg-dark border-bottom">
+          <div class="container-xl">
+            <div class="row g-4">
+              <div class="col-lg-3 d-flex flex-column align-items-lg-center">
+                <a href="./index.html"><img src="./assets/images/logo-light.svg" alt="" class="footer__logo" /></a>
+  
+                <div class="d-flex flex-column gap-3 mt-lg-4 mt-3">
+                  <a href="mailto:(234) 902-180-1802"
+                    class="text-decoration-none text-white fw-light transition d-flex align-items-center gap-3 fm">
+                    <i class="fa-regular fa-envelope fs-3"></i>
+                    address@gmail.com
+                  </a>
+                  <a href="tel:(234) 902-180-1802"
+                    class="text-decoration-none text-white fw-light transition d-flex align-items-center gap-3 me-4 fm">
+                    <i class="fa-brands fa-whatsapp fs-3"></i>
+                    (234) 902-180-1802
+                  </a>
+                  </div>
+  
+                <div class="d-flex gap-3 align-items-center mt-4">
+                  <a href="" class="text-white text-decoration-none d-flex align-items-center"><img
+                      src="./assets/images/icons/facebook.svg" alt="" class="social-icon" /></a>
+                  <a href="" class="text-white text-decoration-none d-flex align-items-center"><img
+                      src="./assets/images/icons/twitter.svg" alt="" class="social-icon" /></a>
+                  <a href="" class="text-white text-decoration-none d-flex align-items-center"><img
+                      src="./assets/images/icons/instagram.svg" alt="" class="social-icon" /></a>
+                  <a href="" class="text-white text-decoration-none d-flex align-items-center"><img
+                      src="./assets/images/icons/linkedin.svg" alt="" class="social-icon" /></a>
+                  </div>
+                  </div>
+  
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <h1 class="fm text-white fw-light text-lg-center fs-2">
+                  Category
+                </h1>
+  
+                <ul class="d-flex flex-column list-unstyled mb-0 text-lg-center mt-3">
+                  <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Development</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Business</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Finance &
+                      Accounting</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">IT &
+                      Software</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Design</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Marketing</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Health &
+                      Fitness</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Music</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Office
+                      Productivity</a>
+                    </li>
+                    </ul>
+                    </div>
+  
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <h1 class="fm text-white fw-light text-lg-center fs-2">
+                  Quick Links
+                </h1>
+  
+                <ul class="d-flex flex-column list-unstyled mb-0 text-lg-center mt-3">
+                  <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Privacy
+                      Policy</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Terms of
+                      Service</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Become an
+                      Instructor</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Help &
+                      Support</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Sitemap</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Accessibility
+                      Statement</a>
+                    </li>
+                    </ul>
+                    </div>
+  
+              <div class="col-lg-3 col-md-4 col-sm-6 d-flex flex-column align-items-lg-center">
+                <h1 class="fm text-white fw-light fs-2 mb-0">Subscribe</h1>
+                <p class="fm text-white fw-light mt-3 text-lg-center">
+                  To get updates, news, insights <br />and promotions
+                </p>
+  
+                <input type="email" placeholder="Email" class="footer--input" />
+  
+                <button class="border-white footer__btn bg-transparent text-white transition fm nowrap mt-3">
+                  Subscribe
+                </button>
+              </div>
+              </div>
+              </div>
+        </section>
+  
+        <section class="footer-bottom bg-black py-2">
+          <div class="container-xl">
+            <p class="fm text-center text-white fw-light fm mb-0">
+              Copyright &copy; <span id="currentYear"></span> Edulexi, All
+              rights reserved
+            </p>
+          </div>
+        </section>
+        </footer>
+</div>
+
+         <!-- search overlay -->
+  <div class="search__overlay" id="searchOverlay">
+    <section class="search__overlay__top py-3 border-bottom px-1">
+      <div class="container-xl d-flex align-items-center justify-content-between">
+        <div class="d-flex gap-3 align-items-center">
+          <i class="fa-solid fa-magnifying-glass fs-6 darkGrey"></i>
+          <input type="search" placeholder="Search for anything" class="search__overlay--input w-100" />
+          </div>
+        <i class="fa-solid fa-xmark darkGrey fs-5 pointer" id="closeSearch"></i>
+        </div>
+        </section>
+
+    <!-- for search results -->
+    <section class="search__overlay__bottom py-3 px-1">
+      <div class="container-xl">
+        <ul class="list-unstyled d-flex flex-column gap-2">
+          <li class="dark fm"></li>
+        </ul>
+      </div>
+    </section>
+    </div>
+    
+
+      <script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="./assets/vendors/jquery.min.js"></script>
+      <script src="./assets/vendors/slick-slider/slick/slick.min.js"></script>
+      <script src="./assets/js/common.js?v=1.0"></script>
+      <script>
+        document.querySelector('.toggle-password').addEventListener('click', function () {
+          const passwordInput = document.querySelector('.password-input');
+          const icon = this.querySelector('i');
+      
+          // Toggle the type attribute of the password input
+          if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            icon.classList.remove('fa-eye');
+            icon.classList.add('fa-eye-slash');
+          } else {
+            passwordInput.type = 'password';
+            icon.classList.remove('fa-eye-slash');
+            icon.classList.add('fa-eye');
+          }
+        });
+      </script>
+</body>
+</html>

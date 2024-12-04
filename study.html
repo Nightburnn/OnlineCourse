@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+
+    <!-- slick-slider -->
+    <link rel="stylesheet" href="assets/vendors/slick-slider/slick/slick.css" />
+    <link rel="stylesheet" href="assets/vendors/slick-slider/slick/slick-theme.css" />
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./assets/vendors/fontawesome/css/all.min.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <link rel="stylesheet" href="./assets/css/study.css" />
+
+    <title>EDULEXI</title>
+</head>
+
+<body>
+    <div id="main" class="study">
+        <!-- header -->
+        <header class="bg-main">
+            <div class="d-lg-none px-sm-3 px-2 py-3 border-bottom-white">
+                <div class="d-flex justify-content-between study__top__right align-items-start gap-2">
+                    <h5 class="fs-5 fm text-white mb-0 fw-normal study__top__heading">
+                        Learn Cybersecurity for Begineers
+                    </h5>
+                    <button class="px-0 bg-transparent border-0 d-lg-none d-block">
+                        <img src="./assets/images/icons/cross-circle.svg" alt="" />
+                    </button>
+                </div>
+                <div class="d-flex gap-2 study__top__right p-2 flex-wrap justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="position-relative">
+                            <img src="./assets/images/icons/score-box.svg" alt="" class="score__box" />
+                            <span class="fm text-white font-18 fw-semibold score__text">80%</span>
+                        </div>
+                        <p class="fm text-white mb-0 font-18 fw-semibold study__top__heading">
+                            Your progress
+                        </p>
+                    </div>
+                    <div class="d-flex gap-sm-4 gap-2">
+                        <button
+                            class="study__top__btn d-flex gap-2 align-items-center justify-content-center text-white">
+                            <span class="d-sm-block d-none">Share</span><img src="./assets/images/icons/share.svg"
+                                alt="" />
+                        </button>
+                        <button class="study__top__btn d-flex px-2 align-items-center justify-content-center text-white"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <img src="./assets/images/icons/star-circle.svg" alt="" /><span
+                                class="d-sm-block d-none">Rate
+                                Course</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="d-flex study__top justify-content-lg-start justify-content-between">
+                <div
+                    class="py-3 study__top__left h-100 px-xl-5 px-md-4 px-sm-3 px-2 d-flex justify-content-center align-items-center">
+                    <a href="./index.html"><img src="./assets/images/logo.svg" alt="" class="study__logo" /></a>
+                </div>
+               
+               <div class="d-flex">
+                <p class="white  about-me"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvas1" aria-controls="offcanvas1">View List</p>
+            <i class="fa-solid fa-bars fs-5 me-4 d-lg-none white pointer-event" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvas1" aria-controls="offcanvas1"></i>
+               </div>
+                <div
+                    class="d-lg-flex d-none justify-content-between align-items-center ps-xl-4 ps-sm-3 ps-2 w-100 pe-sm-3 pe-2 gap-3 flex-lg-nowrap flex-wrap py-3">
+                    <div class="d-flex justify-content-between study__top__right align-items-start gap-2">
+                        <h5 class="fs-5 fm text-white mb-0 fw-normal study__top__heading">
+                            Learn Cybersecurity for Begineers
+                        </h5>
+                        <button class="px-0 bg-transparent border-0 d-lg-none d-block">
+                            <img src="./assets/images/icons/cross-circle.svg" alt="" />
+                        </button>
+                    </div>
+                    <div class="d-md-flex d-none gap-4 justify-content-between study__top__right">
+                        <div class="d-flex gap-4 flex-md-nowrap flex-wrap">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="position-relative">
+                                    <img src="./assets/images/icons/score-box.svg" alt="" class="score__box" />
+                                    <span class="fm text-white font-18 fw-semibold score__text">80%</span>
+                                </div>
+                                <p class="fm text-white mb-0 font-18 fw-semibold">
+                                    Your progress
+                                </p>
+                            </div>
+                            <div class="d-flex gap-4">
+                                <button
+                                    class="study__top__btn d-flex gap-2 align-items-center justify-content-center text-white">
+                                    Share<img src="./assets/images/icons/share.svg" alt="" />
+                                </button>
+                                <button
+                                    class="study__top__btn d-flex px-2 align-items-center justify-content-center text-white"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <img src="./assets/images/icons/star-circle.svg" alt="" />Rate Course
+                                </button>
+                            </div>
+                        </div>
+                        <button class="px-0 bg-transparent border-0 d-xl-block d-none">
+                            <img src="./assets/images/icons/cross-circle.svg" alt="" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </header>
+
+        <!-- main box -->
+
+        <div class="d-flex study__bottom">
+            <!-- left section -->
+            <section class="study__left d-lg-block d-none">
+                <div class="d-flex study__left__tabs">
+                    <button id="course-btn"
+                        class="study__left__tabs__btn study__left__tabs__btn1 tab-active fm d-flex justify-content-center align-items-center main fw-semibold">
+                        Course Outline
+                    </button>
+                    <button id="resources-btn"
+                        class="study__left__tabs__btn fm d-flex justify-content-center align-items-center main fw-semibold">
+                        Resources
+                    </button>
+                </div>
+                <div class="study__left__bottom px-2 py-3" id="course">
+                    <!-- collapse 1 -->
+                    <div class="study__left__bottom__collapse p-2">
+                        <button
+                            class="study__left__bottom__collapse__btn d-flex justify-content-between align-items-center text-white fm fs-6"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false"
+                            aria-controls="collapse1">
+                            Module 1: Introduction to Cybersecurity
+                            <img src="./assets/images/icons/collapse-arrow.svg" alt="" />
+                        </button>
+                        <div class="collapse" id="collapse1">
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox1" />
+                                    <label
+                                        class="form-check-label pointer mt-1 font-14 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox1">
+                                        Visual Studio Code now the recommended editor for this
+                                        project
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox2" />
+                                    <label
+                                        class="form-check-label pointer font-14 mt-1 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox2">
+                                        Analyzing a Cyber Attack
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- collapse 2 -->
+                    <div class="study__left__bottom__collapse p-2">
+                        <button
+                            class="study__left__bottom__collapse__btn d-flex justify-content-between align-items-center text-white fm fs-6"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false"
+                            aria-controls="collapse2">
+                            Module 1: Introduction to Cybersecurity
+                            <img src="./assets/images/icons/collapse-arrow.svg" alt="" />
+                        </button>
+                        <div class="collapse" id="collapse2">
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox3" />
+                                    <label
+                                        class="form-check-label pointer mt-1 font-14 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox3">
+                                        Visual Studio Code now the recommended editor for this
+                                        project
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox4" />
+                                    <label
+                                        class="form-check-label pointer font-14 mt-1 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox4">
+                                        Analyzing a Cyber Attack
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- collapse 3 -->
+                    <div class="study__left__bottom__collapse p-2">
+                        <button
+                            class="study__left__bottom__collapse__btn d-flex justify-content-between align-items-center text-white fm fs-6"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false"
+                            aria-controls="collapse3">
+                            Module 1: Introduction to Cybersecurity
+                            <img src="./assets/images/icons/collapse-arrow.svg" alt="" />
+                        </button>
+                        <div class="collapse" id="collapse3">
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox5" />
+                                    <label
+                                        class="form-check-label pointer mt-1 font-14 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox5">
+                                        Visual Studio Code now the recommended editor for this
+                                        project
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox6" />
+                                    <label
+                                        class="form-check-label pointer font-14 mt-1 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox6">
+                                        Analyzing a Cyber Attack
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- collapse 4 -->
+                    <div class="study__left__bottom__collapse p-2">
+                        <button
+                            class="study__left__bottom__collapse__btn d-flex justify-content-between align-items-center text-white fm fs-6"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false"
+                            aria-controls="collapse4">
+                            Module 1: Introduction to Cybersecurity
+                            <img src="./assets/images/icons/collapse-arrow.svg" alt="" />
+                        </button>
+                        <div class="collapse" id="collapse4">
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox7" />
+                                    <label
+                                        class="form-check-label pointer mt-1 font-14 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox7">
+                                        Visual Studio Code now the recommended editor for this
+                                        project
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox8" />
+                                    <label
+                                        class="form-check-label pointer font-14 mt-1 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox8">
+                                        Analyzing a Cyber Attack
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- collapse 5 -->
+                    <div class="study__left__bottom__collapse p-2">
+                        <button
+                            class="study__left__bottom__collapse__btn d-flex justify-content-between align-items-center text-white fm fs-6"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false"
+                            aria-controls="collapse4">
+                            Module 1: Introduction to Cybersecurity
+                            <img src="./assets/images/icons/collapse-arrow.svg" alt="" />
+                        </button>
+                        <div class="collapse" id="collapse5">
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox9" />
+                                    <label
+                                        class="form-check-label pointer mt-1 font-14 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox9">
+                                        Visual Studio Code now the recommended editor for this
+                                        project
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox10" />
+                                    <label
+                                        class="form-check-label pointer font-14 mt-1 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox10">
+                                        Analyzing a Cyber Attack
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="study__left__bottom px-2 py-3" id="resources">
+                    <!-- collapse 1 -->
+                    <div class="study__left__bottom__collapse p-2">
+                        <button
+                            class="study__left__bottom__collapse__btn d-flex justify-content-between align-items-center text-white fm fs-6"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false"
+                            aria-controls="collapse6">
+                            Module 1: Introduction to Cybersecurity
+                            <img src="./assets/images/icons/collapse-arrow.svg" alt="" />
+                        </button>
+                        <div class="collapse" id="collapse6">
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox11" />
+                                    <label
+                                        class="form-check-label pointer mt-1 font-14 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox11">
+                                        Visual Studio Code now the recommended editor for this
+                                        project
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="1checkbox2" />
+                                    <label
+                                        class="form-check-label pointer font-14 mt-1 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox12">
+                                        Analyzing a Cyber Attack
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- collapse 2 -->
+                    <div class="study__left__bottom__collapse p-2">
+                        <button
+                            class="study__left__bottom__collapse__btn d-flex justify-content-between align-items-center text-white fm fs-6"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false"
+                            aria-controls="collapse7">
+                            Module 1: Introduction to Cybersecurity
+                            <img src="./assets/images/icons/collapse-arrow.svg" alt="" />
+                        </button>
+                        <div class="collapse" id="collapse7">
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox13" />
+                                    <label
+                                        class="form-check-label pointer mt-1 font-14 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox13">
+                                        Visual Studio Code now the recommended editor for this
+                                        project
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox14" />
+                                    <label
+                                        class="form-check-label pointer font-14 mt-1 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox14">
+                                        Analyzing a Cyber Attack
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- right section -->
+            <section class="study__right w-100 px-md-2 px-sm-4 px-3 d-flex align-items-center justify-content-center">
+                <div class="study__right__box">
+                    <div class="study__right__box__main overflow-hidden">
+                        <div class="d-flex font-14 white study__right__box__main__top fm align-items-center gap-2 p-3">
+                            <img src="./assets/images/icons/info.svg" alt="" /> Analyzing a
+                            Cyber Attack
+                        </div>
+                        <div class="h-100 study__right__video">
+                            <iframe src="https://www.youtube.com/embed/zZ6vybT1HQs" class="w-100">
+                            </iframe>
+                        </div>
+                    </div>
+                    <h6 class="fm white fw-normal text-center mt-3">
+                        “Those material things you treasure today, always remember, it is
+                        knowledge that gave birth to them” - Anonymous
+                    </h6>
+                </div>
+            </section>
+        </div>
+
+        <!--add review popup -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="btn-close popup-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <div class="modal-body px-sm-5 px-4 pt-5">
+                        <div class="d-flex flex-column align-items-center">
+                            <h1 class="modal-title text-center fm fs-5 main fw-semibold mb-5" id="exampleModalLabel">
+                                Leave a rating for this course
+                            </h1>
+                            <div class="d-flex gap-2 pb-3">
+                                <div class="dropdown">
+                                    <button class="white--btn border-dark transition fm fw-semibold text-dark nowrap"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                        id="dropdownFilter">
+                                        <i class="fa-solid fa-star icon-star me-2"></i>
+                                        Rank
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownFilter">
+                                        <li class="dropdown-item pointer">Rank 1</li>
+                                        <li class="dropdown-item pointer">Rank 2</li>
+                                        <li class="dropdown-item pointer">Rank 3</li>
+                                    </ul>
+                                </div>
+
+                                <select class="form-select pointer dark" aria-label="Rating star">
+                                    <option selected class="fm dark">Rating star</option>
+                                    <option value="0" class="fm dark">1 star</option>
+                                    <option value="1" class="fm dark">2 stars</option>
+                                    <option value="2" class="fm dark">3 stars</option>
+                                    <option value="3" class="fm dark">4 stars</option>
+                                    <option value="4" class="fm dark">5 stars</option>
+                                </select>
+                            </div>
+
+                            <h5 class="fm dark font-20 text-center popup-heading mt-4">
+                                Why did you leave this rating rank for this course?
+                            </h5>
+                            <textarea class="w-100 p-2 mt-3" rows="5" name=""
+                                placeholder="Please kindly tell us about your own experience taking this course. Are you happy with it?"
+                                id=""></textarea>
+
+                            <div class="d-flex justify-content-center mb-4">
+                                <button class="fm py-1 px-5 mt-4 transition main--btn">
+                                    Save and Continue
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas1" aria-labelledby="offcanvas1Label"
+            data-bs-backdrop="true">
+            <button class="offcanvas-btn rounded-circle d-flex align-items-center justify-content-center"
+                data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fa-solid fa-xmark darkGrey fs-5"></i>
+            </button>
+
+            <div class="offcanvas-body p-0">
+                <div class="d-flex study__left__tabs">
+                    <button id="course-btn2"
+                        class="study__left__tabs__btn study__left__tabs__btn1 tab-active fm d-flex justify-content-center align-items-center main fw-semibold">
+                        Course Outline
+                    </button>
+                    <button id="resources-btn2"
+                        class="study__left__tabs__btn fm d-flex justify-content-center align-items-center main fw-semibold">
+                        Resources
+                    </button>
+                </div>
+                <div class="study__left__bottom px-2 py-3" id="course2">
+                    <!-- collapse 1 -->
+                    <div class="study__left__bottom__collapse p-2">
+                        <button
+                            class="study__left__bottom__collapse__btn d-flex justify-content-between align-items-center text-white fm fs-6"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false"
+                            aria-controls="collapse8">
+                            Module 1: Introduction to Cybersecurity
+                            <img src="./assets/images/icons/collapse-arrow.svg" alt="" />
+                        </button>
+                        <div class="collapse" id="collapse8">
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox21" />
+                                    <label
+                                        class="form-check-label pointer mt-1 font-14 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox21">
+                                        Visual Studio Code now the recommended editor for this
+                                        project
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox22" />
+                                    <label
+                                        class="form-check-label pointer font-14 mt-1 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox22">
+                                        Analyzing a Cyber Attack
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- collapse 2 -->
+                    <div class="study__left__bottom__collapse p-2">
+                        <button
+                            class="study__left__bottom__collapse__btn d-flex justify-content-between align-items-center text-white fm fs-6"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false"
+                            aria-controls="collapse9">
+                            Module 1: Introduction to Cybersecurity
+                            <img src="./assets/images/icons/collapse-arrow.svg" alt="" />
+                        </button>
+                        <div class="collapse" id="collapse9">
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox23" />
+                                    <label
+                                        class="form-check-label pointer mt-1 font-14 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox23">
+                                        Visual Studio Code now the recommended editor for this
+                                        project
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox24" />
+                                    <label
+                                        class="form-check-label pointer font-14 mt-1 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox24">
+                                        Analyzing a Cyber Attack
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- collapse 3 -->
+                    <div class="study__left__bottom__collapse p-2">
+                        <button
+                            class="study__left__bottom__collapse__btn d-flex justify-content-between align-items-center text-white fm fs-6"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false"
+                            aria-controls="collapse10">
+                            Module 1: Introduction to Cybersecurity
+                            <img src="./assets/images/icons/collapse-arrow.svg" alt="" />
+                        </button>
+                        <div class="collapse" id="collapse10">
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox25" />
+                                    <label
+                                        class="form-check-label pointer mt-1 font-14 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox25">
+                                        Visual Studio Code now the recommended editor for this
+                                        project
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox26" />
+                                    <label
+                                        class="form-check-label pointer font-14 mt-1 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox26">
+                                        Analyzing a Cyber Attack
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- collapse 4 -->
+                    <div class="study__left__bottom__collapse p-2">
+                        <button
+                            class="study__left__bottom__collapse__btn d-flex justify-content-between align-items-center text-white fm fs-6"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false"
+                            aria-controls="collapse11">
+                            Module 1: Introduction to Cybersecurity
+                            <img src="./assets/images/icons/collapse-arrow.svg" alt="" />
+                        </button>
+                        <div class="collapse" id="collapse11">
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox27" />
+                                    <label
+                                        class="form-check-label pointer mt-1 font-14 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox27">
+                                        Visual Studio Code now the recommended editor for this
+                                        project
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox28" />
+                                    <label
+                                        class="form-check-label pointer font-14 mt-1 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox28">
+                                        Analyzing a Cyber Attack
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- collapse 5 -->
+                    <div class="study__left__bottom__collapse p-2">
+                        <button
+                            class="study__left__bottom__collapse__btn d-flex justify-content-between align-items-center text-white fm fs-6"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false"
+                            aria-controls="collapse12">
+                            Module 1: Introduction to Cybersecurity
+                            <img src="./assets/images/icons/collapse-arrow.svg" alt="" />
+                        </button>
+                        <div class="collapse" id="collapse12">
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox29" />
+                                    <label
+                                        class="form-check-label pointer mt-1 font-14 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox29">
+                                        Visual Studio Code now the recommended editor for this
+                                        project
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox30" />
+                                    <label
+                                        class="form-check-label pointer font-14 mt-1 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox30">
+                                        Analyzing a Cyber Attack
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="study__left__bottom px-2 py-3" id="resources2">
+                    <!-- collapse 1 -->
+                    <div class="study__left__bottom__collapse p-2">
+                        <button
+                            class="study__left__bottom__collapse__btn d-flex justify-content-between align-items-center text-white fm fs-6"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false"
+                            aria-controls="collapse13">
+                            Module 1: Introduction to Cybersecurity
+                            <img src="./assets/images/icons/collapse-arrow.svg" alt="" />
+                        </button>
+                        <div class="collapse" id="collapse13">
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox31" />
+                                    <label
+                                        class="form-check-label pointer mt-1 font-14 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox31">
+                                        Visual Studio Code now the recommended editor for this
+                                        project
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox32" />
+                                    <label
+                                        class="form-check-label pointer font-14 mt-1 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox32">
+                                        Analyzing a Cyber Attack
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- collapse 2 -->
+                    <div class="study__left__bottom__collapse p-2">
+                        <button
+                            class="study__left__bottom__collapse__btn d-flex justify-content-between align-items-center text-white fm fs-6"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false"
+                            aria-controls="collapse14">
+                            Module 1: Introduction to Cybersecurity
+                            <img src="./assets/images/icons/collapse-arrow.svg" alt="" />
+                        </button>
+                        <div class="collapse" id="collapse14">
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox33" />
+                                    <label
+                                        class="form-check-label pointer mt-1 font-14 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox33">
+                                        Visual Studio Code now the recommended editor for this
+                                        project
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="card card-body rounded-0 p-2 my-2">
+                                <div class="form-check align-items-center d-flex gap-2">
+                                    <input class="form-check-input pointer" type="checkbox" value="" id="checkbox34" />
+                                    <label
+                                        class="form-check-label pointer font-14 mt-1 fm dark d-flex gap-2 justify-content-between align-items-center"
+                                        for="checkbox34">
+                                        Analyzing a Cyber Attack
+
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/icons/video-dark.svg" alt="" />
+                                            <small class="fm dark nowrap font-12">3 min</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/vendors/jquery.min.js"></script>
+    <script src="./assets/vendors/slick-slider/slick/slick.min.js"></script>
+    <!-- <script src="./assets/js/common.js"></script> -->
+
+    <script>
+        const courseBtn = document.getElementById("course-btn");
+        const resourcesBtn = document.getElementById("resources-btn");
+        const courseSection = document.getElementById("course");
+        const resourcesSection = document.getElementById("resources");
+        const courseBtn2 = document.getElementById("course-btn2");
+        const resourcesBtn2 = document.getElementById("resources-btn2");
+        const courseSection2 = document.getElementById("course2");
+        const resourcesSection2 = document.getElementById("resources2");
+        const offcanvasButton = document.querySelector(".offcanvas-btn");
+        const offcanvasElement = document.getElementById("offcanvas1");
+
+        courseBtn.addEventListener("click", function () {
+            courseBtn.classList.add("tab-active");
+            resourcesBtn.classList.remove("tab-active");
+            courseSection.style.display = "block";
+            resourcesSection.style.display = "none";
+        });
+
+        resourcesBtn.addEventListener("click", function () {
+            resourcesBtn.classList.add("tab-active");
+            courseBtn.classList.remove("tab-active");
+            resourcesSection.style.display = "block";
+            courseSection.style.display = "none";
+        });
+
+        courseBtn2.addEventListener("click", function () {
+            courseBtn2.classList.add("tab-active");
+            resourcesBtn2.classList.remove("tab-active");
+            courseSection2.style.display = "block";
+            resourcesSection2.style.display = "none";
+        });
+
+        resourcesBtn2.addEventListener("click", function () {
+            resourcesBtn2.classList.add("tab-active");
+            courseBtn2.classList.remove("tab-active");
+            resourcesSection2.style.display = "block";
+            courseSection2.style.display = "none";
+        });
+
+        offcanvasElement.addEventListener("shown.bs.offcanvas", () => {
+            if (offcanvasButton) {
+                offcanvasButton.style.transform = "scale(1)";
+            }
+        });
+
+        offcanvasButton.addEventListener("click", () => {
+            offcanvasButton.style.transform = "scale(0)";
+        });
+
+        offcanvasElement.addEventListener("hidden.bs.offcanvas", () => {
+            if (offcanvasButton) {
+                offcanvasButton.style.transform = "scale(0)";
+            }
+        });
+    </script>
+</body>
+
+</html>

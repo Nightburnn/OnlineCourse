@@ -1,0 +1,28 @@
+
+.search-result__left {
+  width: 32%;
+}
+.search-result__right {
+  width: 68%;
+}
+.search-result__right__box--img {
+  max-width: 270px;
+  width: 100%;
+  height: 160px;
+}
+
+@media only screen and (max-width: 992px) {
+  .search-result__left {
+    width: 100%;
+  }
+  .search-result__right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+.search-result__right__box--img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+}

@@ -1,0 +1,118 @@
+.my-courses__container {
+  max-width: 990px;
+  width: 100%;
+}
+.my-courses__tab {
+  color: var(--main);
+  border: 2px solid var(--main);
+  width: 200px;
+  height: 60px;
+  background-color: white;
+  border-bottom: 0px solid;
+}
+.tab-active {
+  background-color: var(--main);
+  color: white;
+}
+.border-bottom-main {
+  border-bottom: 2px solid var(--main);
+}
+.course-section {
+  display: none;
+}
+#all-courses {
+  display: block;
+}
+.course-section__search {
+  height: 45px;
+  border: 1.5px solid var(--main);
+}
+.course-section__search button {
+  width: 45px;
+  transition: all 0.3s ease-in-out;
+}
+.course-section__search button:hover {
+  opacity: 0.95;
+}
+@media only screen and (max-width: 576px) {
+  .my-courses__tab {
+    width: 50%;
+  }
+}
+
+/*******************************/
+.profile-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+.profile-img {
+  width: 250px;
+  height: 230px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #26355D;
+}
+.social-btn {
+  transition: all 0.3s;
+  border: 1px solid black;
+  border-radius: 1px;
+  margin-bottom: 20px;
+  padding: 15px 10px;
+}
+.social-btn:hover {
+ background-color: black;
+color: white;
+}
+.text-muted {
+  color: #424242;
+  font-size: 15.83px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+.name {
+  color: #26355D;
+  font-size: 40px;
+  font-weight: 700;
+}
+.instruct {
+  color: #03001C;
+  font-size: 15.83px;
+  font-weight: 400;
+}
+
+*{
+  font-family: 'Roboto';
+}
+
+.instructor-tag {
+            background-color: #000000;
+           color: white; font-size: 14px; font-family: Roboto; font-weight: 400; 
+            padding: 0.30rem 1rem;
+           
+           
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+
+
+.tot h3{
+  color: rgba(0, 0, 0, 0.74); font-size: 15.83px; font-family: Roboto; font-weight: 500;
+}
+
+.tot h2{
+  color: #03001C; font-size: 24px; font-family: Roboto; font-weight: 900;
+}
+
+.about h3{
+  color: #03001C; font-size: 20px; font-family: Roboto; font-weight: 700;
+}
+
+.about p{
+   color: #03001C; font-size: 15.83px; font-family: Roboto; font-weight: 400;
+}
+
+.icons{
+  padding:0 40px;
+}

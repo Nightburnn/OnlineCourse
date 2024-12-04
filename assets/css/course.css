@@ -1,0 +1,48 @@
+.course-banner h2 {
+  max-width: 650px;
+  width: 100%;
+}
+.course-banner__box__content {
+  margin-top: -7px;
+}
+.fixed {
+  position: fixed;
+  z-index: 1000; 
+}
+
+@media (min-width: 992px) {
+  .course-banner__box__content {
+      border: 1px solid #ccc; 
+  }
+}
+
+@media (max-width: 991.98px) {
+  .course-banner__box {
+      position: relative !important;
+      top: auto !important;
+  }
+}
+
+.learning__box {
+  border: 1.5px solid var(--main);
+}
+.course-width {
+  max-width: 700px;
+  width: 100%;
+}
+li::marker {
+  color: var(--main) !important;
+  font-size: 20px !important;
+}
+.course-width ul {
+  padding-left: 1.2rem;
+}
+.course-btn:hover{
+    background-color: var(--main) !important;
+    color: var(--white) !important;
+}
+.collapse-video{
+    margin-top: 5px;
+}
+
+

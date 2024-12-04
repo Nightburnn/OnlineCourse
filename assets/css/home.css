@@ -1,0 +1,34 @@
+.banner {
+  z-index: 0;
+}
+.banner__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.banner__overlay__box {
+  max-width: 350px;
+}
+.topic__btn {
+  height: 66px;
+  background-color: white;
+  border: 1.5px solid black;
+}
+.subject__box__para {
+  font-size: 11.3px;
+}
+@media only screen and (max-width: 768px) {
+  .banner {
+    position: static !important;
+  }
+  .banner__overlay {
+    position: static;
+    z-index: 0;
+  }
+  .banner__overlay__box {
+    max-width: none;
+  }
+}

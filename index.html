@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+
+    <!-- slick-slider -->
+    <link rel="stylesheet" href="assets/vendors/slick-slider/slick/slick.css" />
+    <link rel="stylesheet" href="assets/vendors/slick-slider/slick/slick-theme.css" />
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./assets/vendors/fontawesome/css/all.min.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/common.css?v=1.0" />
+    <link rel="stylesheet" href="./assets/css/home.css?v=1.0" />
+
+    <title>EDULEXI</title>
+  </head>
+
+  <body>
+    <div id="main">
+      <!-- header logged In -->
+      <header class="header">
+        <section class="topnav bg-purple py-2 fm">
+          <div class="container-xl">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="fm white mb-0">All courses 20% off for Lagosians!</p>
+
+              <div class="d-md-flex d-none gap-lg-5">
+                <a href="tel:(234) 902-180-1802"
+                  class="text-decoration-none text-white transition d-flex align-items-center gap-2 me-4 fm">
+                  <i class="fa-brands fa-whatsapp fs-4"></i>
+                  (234) 902-180-1802
+                </a>
+
+                <a href="mailto:(234) 902-180-1802"
+                  class="text-decoration-none text-white transition d-flex align-items-center gap-2 fm">
+                  <i class="fa-regular fa-envelope fs-4"></i>
+                  address@gmail.com
+                </a>
+              </div>
+
+              <div class="d-md-flex d-none gap-2 align-items-center">
+                <a href="" class="text-white text-decoration-none d-flex align-items-center"><img
+                    src="./assets/images/icons/facebook.svg" alt="" class="social-icon" /></a>
+                <a href="" class="text-white text-decoration-none d-flex align-items-center"><img
+                    src="./assets/images/icons/twitter.svg" alt="" class="social-icon" /></a>
+                <a href="" class="text-white text-decoration-none d-flex align-items-center"><img
+                    src="./assets/images/icons/instagram.svg" alt="" class="social-icon" /></a>
+                <a href="" class="text-white text-decoration-none d-flex align-items-center"><img
+                    src="./assets/images/icons/linkedin.svg" alt="" class="social-icon" /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="midnav bg-white fm py-2">
+          <div class="container-xl py-1">
+            <div class="d-flex align-items-center gap-lg-4 gap-3 justify-content-md-start justify-content-between">
+              <i class="fa-solid fa-bars fs-5 me-4 d-md-none pointer-event" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvas1" aria-controls="offcanvas1"></i>
+              <a href="./index.html">
+                <img src="./assets/images/logo.svg" alt="" class="logo" />
+              </a>
+
+              <div class="midnav__search d-md-flex d-none align-items-center gap-4">
+                <img src="./assets/images/icons/search.svg" alt="" class="" />
+                <input type="search" placeholder="Search for anything" id="input" class="midnav__search--input w-100" />
+              </div>
+
+              <div class="d-flex gap-xxl-5 gap-md-4">
+                <div class="d-flex align-items-center gap-3">
+                  <a href="./search-result.html" class="text-decoration-none main transition fm nowrap d-lg-block d-none">Create A
+                    Course</a>
+                  <a href="#" class="text-decoration-none main transition fm nowrap d-md-block d-none">Helpdesk</a>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                  <i class="fa-solid fa-magnifying-glass fs-5 main pointer d-md-none" id="search"></i>
+                  <a href="shoppingCart.html"><img src="./assets/images/icons/cart.svg" alt="" class="icon-cart" /></a>
+                  <button class="white--btn transition fm d-md-block d-none nowrap">
+                    <a href="login.html">Log In</a>
+                  </button>
+                  <button class="main--btn transition fm d-md-block d-none nowrap">
+                   <a href="signUp.html">Sign Up</a> 
+                  </button>
+                </div>
+              </div>
+              </div>
+              </div>
+              </section>
+
+        <section class="bottomnav bg-dark py-2 d-md-block d-none position-relative">
+          <div class="container-xl">
+            <ul class="list-unstyled d-flex justify-content-around m-0">
+              <li class="text-white bottomnav__item pointer" data-target="development">
+                Development
+              </li>
+              <li class="text-white bottomnav__item pointer" data-target="business">
+                Business
+              </li>
+              <li class="text-white bottomnav__item pointer" data-target="finance">
+                Finance & Accounting
+              </li>
+              <li class="text-white bottomnav__item pointer" data-target="it">
+                IT & Software
+              </li>
+              <li class="text-white bottomnav__item pointer" data-target="design">
+                Design
+              </li>
+              <li class="text-white bottomnav__item pointer" data-target="marketing">
+                Marketing
+              </li>
+              <li class="text-white bottomnav__item pointer" data-target="health">
+                Health & Fitness
+              </li>
+              <li class="text-white bottomnav__item pointer" data-target="music">
+                Music
+              </li>
+              <li class="text-white bottomnav__item pointer" data-target="office">
+                Office Productivity
+              </li>
+            </ul>
+          </div>
+          </section>
+
+        <section>
+          <div class="dropnav py-2" id="development">
+            <div class="container-xl">
+              <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">Microsoft</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">Apple</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">Google</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">Oracle</a>
+                </li>
+              </ul>
+            </div>
+            </div>
+
+          <div class="dropnav py-2" id="business">
+            <div class="container-xl">
+              <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">Business 1</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">business 2</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">business 3</a>
+                </li>
+              </ul>
+            </div>
+            </div>
+
+          <div class="dropnav py-2" id="finance">
+            <div class="container-xl">
+              <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">finance 1</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">finance 2</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">finance 3</a>
+                </li>
+              </ul>
+            </div>
+            </div>
+
+          <div class="dropnav py-2" id="it">
+            <div class="container-xl">
+              <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">it 1</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">it 2</a>
+                </li>
+              </ul>
+            </div>
+            </div>
+
+          <div class="dropnav py-2" id="design">
+            <div class="container-xl">
+              <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">design 1</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">design 2</a>
+                </li>
+              </ul>
+            </div>
+            </div>
+
+          <div class="dropnav py-2" id="marketing">
+            <div class="container-xl">
+              <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">marketing 1</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">marketing 2</a>
+                </li>
+              </ul>
+            </div>
+            </div>
+
+          <div class="dropnav py-2" id="health">
+            <div class="container-xl">
+              <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">health 1</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">health 2</a>
+                </li>
+              </ul>
+            </div>
+            </div>
+
+          <div class="dropnav py-2" id="music">
+            <div class="container-xl">
+              <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">music 1</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">music 2</a>
+                </li>
+              </ul>
+            </div>
+            </div>
+
+          <div class="dropnav py-2" id="office">
+            <div class="container-xl">
+              <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">office 1</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">office 2</a>
+                </li>
+              </ul>
+            </div>
+            </div>
+            </section>
+
+        <!-- offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas1" aria-labelledby="offcanvas1Label"
+          data-bs-backdrop="true">
+          <button class="offcanvas-btn rounded-circle d-flex align-items-center justify-content-center"
+            data-bs-dismiss="offcanvas" aria-label="Close">
+            <i class="fa-solid fa-xmark darkGrey fs-5"></i>
+          </button>
+          <div class="position-relative overflow-hidden h-100">
+            <div class="offcanvas-body p-0 h-100">
+              <ul class="list-unstyled offcanvas-padding border-bottom mb-0">
+                <li class="mb-2">
+                  <a href="#" class="fm font-14 purple purple-hover text-decoration-none">Log In</a>
+                </li>
+                <li class="mb-1">
+                  <a href="#" class="fm font-14 purple purple-hover text-decoration-none">Sign Up</a>
+                </li>
+              </ul>
+
+              <div class="offcanvas-padding mt-1 border-bottom">
+                <p class="fm text-dark darkGrey fw-semibold font-12">
+                  Most Popular
+                </p>
+                <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                  <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuDevelopment">
+                    Development
+                    <i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+                  </li>
+                  <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuBusiness">
+                    Business<i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+                  </li>
+                  <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuAccounting">
+                    Finance & Accounting<i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+                  </li>
+                  <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuIT">
+                    IT & Software<i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+                  </li>
+                  <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuDesign">
+                    Design<i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+                  </li>
+                  <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuMarketing">
+                    Marketing<i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+                  </li>
+                  <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuHealth">
+                    Health & Fitness<i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+                  </li>
+                  <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuMusic">
+                    Music<i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+                  </li>
+                  <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuOffice">
+                    Office Productivity<i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="offcanvas-padding mt-2">
+                <p class="fm text-dark darkGrey fw-semibold font-12">Support</p>
+                <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                  <li>
+                    <a href="#" class="fm font-14 dark text-decoration-none">Helpdesk</a>
+                    </li>
+                    <li>
+                    <a href="./search-result.html" class="fm font-14 dark text-decoration-none">Create a Course</a>
+                    </li>
+                    </ul>
+                    </div>
+                    </div>
+
+            <!-- overlay menu -->
+            <div class="offcanvas-overlay position-absolute bg-white fm" id="overlayMenu">
+              <div class="d-flex gap-3 offcanvas-padding py-3 align-items-center offcanvas-overlay__top">
+                <i class="fa-solid fa-chevron-left pointer" id="backButton"></i>
+                <p class="fm dark font-14 mb-0">Menu</p>
+              </div>
+
+              <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="developmentMenu">
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Microsoft</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Apple</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Google</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Oracle</a>
+                </li>
+              </ul>
+
+              <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="businessMenu">
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Business 1</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Business 2</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Business 3</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Business 4</a>
+                </li>
+              </ul>
+
+              <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="accountingMenu">
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Accounting 1</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Accounting 2</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Accounting 3</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Accounting 4</a>
+                </li>
+              </ul>
+
+              <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="itMenu">
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">IT 1</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">IT 2</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">IT 3</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">IT 4</a>
+                </li>
+              </ul>
+
+              <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="designMenu">
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Design 1</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Design 2</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Design 3</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Design 4</a>
+                </li>
+              </ul>
+
+              <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="marketingMenu">
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Marketing 1</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Marketing 2</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Marketing 3</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Marketing 4</a>
+                </li>
+              </ul>
+
+              <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="healthMenu">
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Health 1</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Health 2</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Health 3</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Health 4</a>
+                </li>
+              </ul>
+
+              <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="musicMenu">
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Music 1</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Music 2</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Music 3</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Music 4</a>
+                </li>
+              </ul>
+
+              <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="officeMenu">
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Office 1</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Office 2</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Office 3</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Office 4</a>
+                </li>
+              </ul>
+              </div>
+              </div>
+              </div>
+              </header>
+
+      <!-- Highlight-->
+      <section class="highlight py-3 bg-white">
+        <div class="container-xl d-flex align-items-center gap-3">
+          <img src="./assets/images/icons/user.svg" alt="" class="user-icon" />
+          <p class="fs-5 fm main mb-0">Heyyy, Alexander!</p>
+        </div>
+      </section>
+
+      <!-- Banner -->
+      <section class="position-relative banner">
+        <img src="./assets/images/banner.svg" alt="" class="img-fluid d-md-block d-none" />
+        <img src="./assets/images/banner-sm.jpg" alt="" class="img-fluid d-md-none d-block" />
+        <div class="banner__overlay">
+          <div class="container-xl d-flex align-items-center h-100">
+            <div class="banner__overlay__box bg-white p-md-4 pt-2">
+              <h3 class="fs-2 main fm">
+                Last day for courses from &#8358;4,000
+              </h3>
+              <p class="fm mb-0 font-15">
+                Your future’s wide open, and so is our course library. Learn
+                more for less.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- info top-->
+      <section class="my-4">
+        <div class="container-xl">
+          <div class="info bg-main py-3 px-lg-5 px-3 d-flex justify-content-between align-items-center flex-wrap gap-3">
+            <p class="fm mb-0 text-white">
+              You want to sell your course? You can join Edulexi as an
+              instructor!
+            </p>
+
+            <div class="d-flex gap-2">
+              <button class="white--btn transition fm nowrap border-0">
+                Teach on Edulexis
+              </button>
+              <button class="main--btn white-border transition fm nowrap">
+                Dismiss
+              </button>
+            </div>
+          </div>
+        </div>
+        </section>
+
+      <!-- Recommended for you -->
+      <section class="subject my-4">
+        <div class="container-xl px-xl-1">
+          <h4 class="fs-5 main fm mb-3 px-xl-2">Recommended for You</h4>
+
+          <div class="slick">
+            <div class="px-2">
+              <div class="subject__box">
+                <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php1.png" alt="" class="img-fluid" /></a>
+
+                <div class="p-2">
+                  <a href="#" class="text-decoration-none dark color-hover">
+                    <h6 class="fs-6 fm main subject__box__heading mb-1">
+                      PHP with Laravel for beginners - Become a Master in Laravel
+                  </h6></a>
+                  <p class="fm dark font-12 subject__box__para mb-1">
+                    <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                    </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fm">
+                        <span class="dark fw-semibold font-14">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-14">(50,355)</span>
+                      </div>
+
+                      <div class="fm d-flex align-items-center gap-3">
+                        <span class="dark fw-semibold">&#8358;5,000</span>
+                        <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                      </div>
+                    </div>
+
+                    <button class="heart-btn rounded-circle">
+                      <i class="fa-solid fa-heart fs-5"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+
+            <div class="px-2">
+              <div class="subject__box">
+                <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php2.png" alt="" class="img-fluid" /></a>
+
+                <div class="p-2">
+                  <a href="#" class="text-decoration-none dark color-hover">
+                    <h6 class="fs-6 fm main subject__box__heading mb-1">
+                      PHP with Laravel for beginners - Become a Master in Laravel
+                    </h6>
+                  </a>
+                  <p class="fm dark font-12 subject__box__para mb-1">
+                    <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                    </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fm">
+                        <span class="dark fw-semibold font-14">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-14">(50,355)</span>
+                      </div>
+
+                      <div class="fm d-flex align-items-center gap-3">
+                        <span class="dark fw-semibold">&#8358;5,000</span>
+                        <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                      </div>
+                    </div>
+
+                    <button class="heart-btn rounded-circle">
+                      <i class="fa-solid fa-heart fs-5"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+
+            <div class="px-2">
+              <div class="subject__box">
+                <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php3.png" alt="" class="img-fluid" /></a>
+
+                <div class="p-2">
+                  <a href="#" class="text-decoration-none dark color-hover">
+                    <h6 class="fs-6 fm main subject__box__heading mb-1">
+                      PHP with Laravel for beginners - Become a Master in Laravel
+                    </h6>
+                  </a>
+                  <p class="fm dark font-12 subject__box__para mb-1">
+                    <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                    </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fm">
+                        <span class="dark fw-semibold font-14">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-14">(50,355)</span>
+                      </div>
+
+                      <div class="fm d-flex align-items-center gap-3">
+                        <span class="dark fw-semibold">&#8358;5,000</span>
+                        <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                      </div>
+                    </div>
+
+                    <button class="heart-btn rounded-circle">
+                      <i class="fa-solid fa-heart fs-5"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+
+            <div class="px-2">
+              <div class="subject__box">
+                <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php4.png" alt="" class="img-fluid" /></a>
+
+                <div class="p-2">
+                  <a href="#" class="text-decoration-none dark color-hover">
+                    <h6 class="fs-6 fm main subject__box__heading mb-1">
+                      PHP with Laravel for beginners - Become a Master in Laravel
+                    </h6>
+                  </a>
+                  <p class="fm dark font-12 subject__box__para mb-1">
+                    <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                    </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fm">
+                        <span class="dark fw-semibold font-14">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-14">(50,355)</span>
+                      </div>
+
+                      <div class="fm d-flex align-items-center gap-3">
+                        <span class="dark fw-semibold">&#8358;5,000</span>
+                        <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                      </div>
+                    </div>
+
+                    <button class="heart-btn rounded-circle">
+                      <i class="fa-solid fa-heart fs-5"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+
+            <div class="px-2">
+              <div class="subject__box">
+              <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php5.png" alt="" class="img-fluid" /></a>
+
+                <div class="p-2">
+                  <a href="#" class="text-decoration-none dark color-hover">
+                    <h6 class="fs-6 fm main subject__box__heading mb-1">
+                      PHP with Laravel for beginners - Become a Master in Laravel
+                    </h6>
+                  </a>
+                  <p class="fm dark font-12 subject__box__para mb-1">
+                    <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                    </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fm">
+                        <span class="dark fw-semibold font-14">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-14">(50,355)</span>
+                      </div>
+
+                      <div class="fm d-flex align-items-center gap-3">
+                        <span class="dark fw-semibold">&#8358;5,000</span>
+                        <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                      </div>
+                    </div>
+
+                    <button class="heart-btn rounded-circle">
+                      <i class="fa-solid fa-heart fs-5"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </section>
+
+      <!-- Because you searched for “python” -->
+      <section class="subject my-4">
+        <div class="container-xl px-xl-1">
+          <h4 class="fs-5 main fm mb-3 px-xl-2">
+            Because you searched for “python”
+          </h4>
+
+          <div class="slick">
+            <div class="px-2">
+              <div class="subject__box">
+                <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php5.png" alt="" class="img-fluid" /></a>
+
+                <div class="p-2">
+                  <a href="#" class="text-decoration-none dark color-hover">
+                    <h6 class="fs-6 fm main subject__box__heading mb-1">
+                      PHP with Laravel for beginners - Become a Master in Laravel
+                  </h6></a>
+                  <p class="fm dark font-12 subject__box__para mb-1">
+                    <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                    </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fm">
+                        <span class="dark fw-semibold font-14">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-14">(50,355)</span>
+                      </div>
+
+                      <div class="fm d-flex align-items-center gap-3">
+                        <span class="dark fw-semibold">&#8358;5,000</span>
+                        <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                      </div>
+                    </div>
+
+                    <button class="heart-btn rounded-circle">
+                      <i class="fa-solid fa-heart fs-5"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+
+            <div class="px-2">
+              <div class="subject__box">
+                <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php6.png" alt="" class="img-fluid" /></a>
+
+                <div class="p-2">
+                  <a href="#" class="text-decoration-none dark color-hover">
+                    <h6 class="fs-6 fm main subject__box__heading mb-1">
+                      PHP with Laravel for beginners - Become a Master in Laravel
+                  </h6></a>
+                  <p class="fm dark font-12 subject__box__para mb-1">
+                    <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                    </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fm">
+                        <span class="dark fw-semibold font-14">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-14">(50,355)</span>
+                      </div>
+
+                      <div class="fm d-flex align-items-center gap-3">
+                        <span class="dark fw-semibold">&#8358;5,000</span>
+                        <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                      </div>
+                    </div>
+
+                    <button class="heart-btn rounded-circle">
+                      <i class="fa-solid fa-heart fs-5"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+
+            <div class="px-2">
+              <div class="subject__box">
+                <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php7.png" alt="" class="img-fluid" /></a>
+
+                <div class="p-2">
+                  <a href="#" class="text-decoration-none dark color-hover">
+                    <h6 class="fs-6 fm main subject__box__heading mb-1">
+                      PHP with Laravel for beginners - Become a Master in Laravel
+                  </h6></a>
+                  <p class="fm dark font-12 subject__box__para mb-1">
+                    <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                    </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fm">
+                        <span class="dark fw-semibold font-14">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-14">(50,355)</span>
+                      </div>
+
+                      <div class="fm d-flex align-items-center gap-3">
+                        <span class="dark fw-semibold">&#8358;5,000</span>
+                        <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                      </div>
+                    </div>
+
+                    <button class="heart-btn rounded-circle">
+                      <i class="fa-solid fa-heart fs-5"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+
+            <div class="px-2">
+              <div class="subject__box">
+                <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php8.png" alt="" class="img-fluid" /></a>
+
+                <div class="p-2">
+                  <a href="#" class="text-decoration-none dark color-hover">
+                    <h6 class="fs-6 fm main subject__box__heading mb-1">
+                      PHP with Laravel for beginners - Become a Master in Laravel
+                  </h6></a>
+                  <p class="fm dark font-12 subject__box__para mb-1">
+                    <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                    </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fm">
+                        <span class="dark fw-semibold font-14">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-14">(50,355)</span>
+                      </div>
+
+                      <div class="fm d-flex align-items-center gap-3">
+                        <span class="dark fw-semibold">&#8358;5,000</span>
+                        <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                      </div>
+                    </div>
+
+                    <button class="heart-btn rounded-circle">
+                      <i class="fa-solid fa-heart fs-5"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+
+            <div class="px-2">
+              <div class="subject__box">
+                <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php9.png" alt="" class="img-fluid" /></a>
+
+                <div class="p-2">
+                  <a href="#" class="text-decoration-none dark color-hover">
+                    <h6 class="fs-6 fm main subject__box__heading mb-1">
+                      PHP with Laravel for beginners - Become a Master in Laravel
+                  </h6></a>
+                  <p class="fm dark font-12 subject__box__para mb-1">
+                    <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                    </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fm">
+                        <span class="dark fw-semibold font-14">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-14">(50,355)</span>
+                      </div>
+
+                      <div class="fm d-flex align-items-center gap-3">
+                        <span class="dark fw-semibold">&#8358;5,000</span>
+                        <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                      </div>
+                    </div>
+
+                    <button class="heart-btn rounded-circle">
+                      <i class="fa-solid fa-heart fs-5"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </section>
+
+      <!-- Learners are viewing -->
+      <section class="subject my-4">
+        <div class="container-xl px-xl-1">
+          <h4 class="fs-5 main fm mb-3 px-xl-2">Learners are viewing</h4>
+
+          <div class="slick">
+            <div class="px-2">
+              <div class="subject__box">
+                <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php9.png" alt="" class="img-fluid" /></a>
+
+                <div class="p-2">
+                  <a href="#" class="text-decoration-none dark color-hover">
+                    <h6 class="fs-6 fm main subject__box__heading mb-1">
+                      PHP with Laravel for beginners - Become a Master in Laravel
+                  </h6></a>
+                  <p class="fm dark font-12 subject__box__para mb-1">
+                    <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                    </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fm">
+                        <span class="dark fw-semibold font-14">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-14">(50,355)</span>
+                      </div>
+
+                      <div class="fm d-flex align-items-center gap-3">
+                        <span class="dark fw-semibold">&#8358;5,000</span>
+                        <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                      </div>
+                    </div>
+
+                    <button class="heart-btn rounded-circle">
+                      <i class="fa-solid fa-heart fs-5"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+
+            <div class="px-2">
+              <div class="subject__box">
+                <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php10.png" alt="" class="img-fluid" /></a>
+
+                <div class="p-2">
+                  <a href="#" class="text-decoration-none dark color-hover">
+                    <h6 class="fs-6 fm main subject__box__heading mb-1">
+                      PHP with Laravel for beginners - Become a Master in Laravel
+                  </h6></a>
+                  <p class="fm dark font-12 subject__box__para mb-1">
+                    <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                    </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fm">
+                        <span class="dark fw-semibold font-14">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-14">(50,355)</span>
+                      </div>
+
+                      <div class="fm d-flex align-items-center gap-3">
+                        <span class="dark fw-semibold">&#8358;5,000</span>
+                        <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                      </div>
+                    </div>
+
+                    <button class="heart-btn rounded-circle">
+                      <i class="fa-solid fa-heart fs-5"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+
+            <div class="px-2">
+              <div class="subject__box">
+                <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php11.png" alt="" class="img-fluid" /></a>
+
+                <div class="p-2">
+                  <a href="#" class="text-decoration-none dark color-hover">
+                    <h6 class="fs-6 fm main subject__box__heading mb-1">
+                      PHP with Laravel for beginners - Become a Master in Laravel
+                  </h6></a>
+                  <p class="fm dark font-12 subject__box__para mb-1">
+                    <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                    </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fm">
+                        <span class="dark fw-semibold font-14">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-14">(50,355)</span>
+                      </div>
+
+                      <div class="fm d-flex align-items-center gap-3">
+                        <span class="dark fw-semibold">&#8358;5,000</span>
+                        <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                      </div>
+                    </div>
+
+                    <button class="heart-btn rounded-circle">
+                      <i class="fa-solid fa-heart fs-5"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+
+            <div class="px-2">
+              <div class="subject__box">
+                <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php12.png" alt="" class="img-fluid" /></a>
+
+                <div class="p-2">
+                  <a href="#" class="text-decoration-none dark color-hover">
+                    <h6 class="fs-6 fm main subject__box__heading mb-1">
+                      PHP with Laravel for beginners - Become a Master in Laravel
+                  </h6></a>
+                  <p class="fm dark font-12 subject__box__para mb-1">
+                    <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                    </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fm">
+                        <span class="dark fw-semibold font-14">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-14">(50,355)</span>
+                      </div>
+
+                      <div class="fm d-flex align-items-center gap-3">
+                        <span class="dark fw-semibold">&#8358;5,000</span>
+                        <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                      </div>
+                    </div>
+
+                    <button class="heart-btn rounded-circle">
+                      <i class="fa-solid fa-heart fs-5"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+
+            <div class="px-2">
+              <div class="subject__box">
+                <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php13.png" alt="" class="img-fluid" /></a>
+
+                <div class="p-2">
+                  <a href="#" class="text-decoration-none dark color-hover">
+                    <h6 class="fs-6 fm main subject__box__heading mb-1">
+                      PHP with Laravel for beginners - Become a Master in Laravel
+                  </h6></a>
+                  <p class="fm dark font-12 subject__box__para mb-1">
+                    <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                    </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fm">
+                        <span class="dark fw-semibold font-14">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-14">(50,355)</span>
+                      </div>
+
+                      <div class="fm d-flex align-items-center gap-3">
+                        <span class="dark fw-semibold">&#8358;5,000</span>
+                        <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                      </div>
+                    </div>
+
+                    <button class="heart-btn rounded-circle">
+                      <i class="fa-solid fa-heart fs-5"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </section>
+
+      <!-- Because you wishlisted “Java Beginners Friendly” -->
+      <section class="subject my-4">
+        <div class="container-xl px-xl-1">
+          <h4 class="fs-5 main fm mb-3 px-xl-2">
+            Because you wishlisted “Java Beginners Friendly”
+          </h4>
+
+          <div class="slick">
+            <div class="px-2">
+              <div class="subject__box">
+              <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php13.png" alt="" class="img-fluid" /></a>
+
+                <div class="p-2">
+                  <a href="#" class="text-decoration-none dark color-hover">
+                    <h6 class="fs-6 fm main subject__box__heading mb-1">
+                      PHP with Laravel for beginners - Become a Master in Laravel
+                  </h6></a>
+                  <p class="fm dark font-12 subject__box__para mb-1">
+                    <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                    </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fm">
+                        <span class="dark fw-semibold font-14">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-14">(50,355)</span>
+                      </div>
+
+                      <div class="fm d-flex align-items-center gap-3">
+                        <span class="dark fw-semibold">&#8358;5,000</span>
+                        <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                      </div>
+                    </div>
+
+                    <button class="heart-btn rounded-circle">
+                      <i class="fa-solid fa-heart fs-5"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+
+            <div class="px-2">
+              <div class="subject__box">
+                <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php14.png" alt="" class="img-fluid" /></a>
+
+                <div class="p-2">
+                  <a href="#" class="text-decoration-none dark color-hover">
+                    <h6 class="fs-6 fm main subject__box__heading mb-1">
+                      PHP with Laravel for beginners - Become a Master in Laravel
+                  </h6></a>
+                  <p class="fm dark font-12 subject__box__para mb-1">
+                    <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                    </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fm">
+                        <span class="dark fw-semibold font-14">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-14">(50,355)</span>
+                      </div>
+
+                      <div class="fm d-flex align-items-center gap-3">
+                        <span class="dark fw-semibold">&#8358;5,000</span>
+                        <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                      </div>
+                    </div>
+
+                    <button class="heart-btn rounded-circle">
+                      <i class="fa-solid fa-heart fs-5"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+
+            <div class="px-2">
+              <div class="subject__box">
+                <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php15.png" alt="" class="img-fluid" /></a>
+
+                <div class="p-2">
+                  <a href="#" class="text-decoration-none dark color-hover">
+                    <h6 class="fs-6 fm main subject__box__heading mb-1">
+                      PHP with Laravel for beginners - Become a Master in Laravel
+                  </h6></a>
+                  <p class="fm dark font-12 subject__box__para mb-1">
+                    <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                    </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fm">
+                        <span class="dark fw-semibold font-14">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-14">(50,355)</span>
+                      </div>
+
+                      <div class="fm d-flex align-items-center gap-3">
+                        <span class="dark fw-semibold">&#8358;5,000</span>
+                        <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                      </div>
+                    </div>
+
+                    <button class="heart-btn rounded-circle">
+                      <i class="fa-solid fa-heart fs-5"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+
+            <div class="px-2">
+              <div class="subject__box">
+              <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php16.png" alt="" class="img-fluid" /></a>
+
+                <div class="p-2">
+                  <a href="#" class="text-decoration-none dark color-hover">
+                    <h6 class="fs-6 fm main subject__box__heading mb-1">
+                      PHP with Laravel for beginners - Become a Master in Laravel
+                  </h6></a>
+                  <p class="fm dark font-12 subject__box__para mb-1">
+                    <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                    </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fm">
+                        <span class="dark fw-semibold font-14">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-14">(50,355)</span>
+                      </div>
+
+                      <div class="fm d-flex align-items-center gap-3">
+                        <span class="dark fw-semibold">&#8358;5,000</span>
+                        <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                      </div>
+                    </div>
+
+                    <button class="heart-btn rounded-circle">
+                      <i class="fa-solid fa-heart fs-5"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+
+            <div class="px-2">
+              <div class="subject__box">
+                <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php17.png" alt="" class="img-fluid" /></a>
+
+                <div class="p-2">
+                  <a href="#" class="text-decoration-none dark color-hover">
+                    <h6 class="fs-6 fm main subject__box__heading mb-1">
+                      PHP with Laravel for beginners - Become a Master in Laravel
+                  </h6></a>
+                  <p class="fm dark font-12 subject__box__para mb-1">
+                    <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                    </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fm">
+                        <span class="dark fw-semibold font-14">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-14">(50,355)</span>
+                      </div>
+
+                      <div class="fm d-flex align-items-center gap-3">
+                        <span class="dark fw-semibold">&#8358;5,000</span>
+                        <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                      </div>
+                    </div>
+
+                    <button class="heart-btn rounded-circle">
+                      <i class="fa-solid fa-heart fs-5"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </section>
+
+      <!-- Featured courses in “Vue JS” -->
+      <section class="subject my-4">
+        <div class="container-xl px-xl-1">
+          <h4 class="fs-5 main fm mb-3 px-xl-2">
+            Featured courses in “Vue JS”
+          </h4>
+
+          <div class="slick">
+            <div class="px-2">
+              <div class="subject__box">
+                <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php17.png" alt="" class="img-fluid" /></a>
+
+                <div class="p-2">
+                  <a href="#" class="text-decoration-none dark color-hover">
+                    <h6 class="fs-6 fm main subject__box__heading mb-1">
+                      PHP with Laravel for beginners - Become a Master in Laravel
+                  </h6></a>
+                  <p class="fm dark font-12 subject__box__para mb-1">
+                    <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                    </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fm">
+                        <span class="dark fw-semibold font-14">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-14">(50,355)</span>
+                      </div>
+
+                      <div class="fm d-flex align-items-center gap-3">
+                        <span class="dark fw-semibold">&#8358;5,000</span>
+                        <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                      </div>
+                    </div>
+
+                    <button class="heart-btn rounded-circle">
+                      <i class="fa-solid fa-heart fs-5"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+
+            <div class="px-2">
+              <div class="subject__box">
+              <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php18.png" alt="" class="img-fluid" /></a>
+
+                <div class="p-2">
+                  <a href="#" class="text-decoration-none dark color-hover">
+                    <h6 class="fs-6 fm main subject__box__heading mb-1">
+                      PHP with Laravel for beginners - Become a Master in Laravel
+                  </h6></a>
+                  <p class="fm dark font-12 subject__box__para mb-1">
+                    <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                    </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fm">
+                        <span class="dark fw-semibold font-14">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-14">(50,355)</span>
+                      </div>
+
+                      <div class="fm d-flex align-items-center gap-3">
+                        <span class="dark fw-semibold">&#8358;5,000</span>
+                        <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                      </div>
+                    </div>
+
+                    <button class="heart-btn rounded-circle">
+                      <i class="fa-solid fa-heart fs-5"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+
+            <div class="px-2">
+              <div class="subject__box">
+                <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php19.png" alt="" class="img-fluid" /></a>
+
+                <div class="p-2">
+                  <a href="#" class="text-decoration-none dark color-hover">
+                    <h6 class="fs-6 fm main subject__box__heading mb-1">
+                      PHP with Laravel for beginners - Become a Master in Laravel
+                  </h6></a>
+                  <p class="fm dark font-12 subject__box__para mb-1">
+                    <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                    </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fm">
+                        <span class="dark fw-semibold font-14">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-14">(50,355)</span>
+                      </div>
+
+                      <div class="fm d-flex align-items-center gap-3">
+                        <span class="dark fw-semibold">&#8358;5,000</span>
+                        <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                      </div>
+                    </div>
+
+                    <button class="heart-btn rounded-circle">
+                      <i class="fa-solid fa-heart fs-5"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+
+            <div class="px-2">
+              <div class="subject__box">
+              <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php20.png" alt="" class="img-fluid" /></a>
+
+                <div class="p-2">
+                  <a href="#" class="text-decoration-none dark color-hover">
+                    <h6 class="fs-6 fm main subject__box__heading mb-1">
+                      PHP with Laravel for beginners - Become a Master in Laravel
+                  </h6></a>
+                  <p class="fm dark font-12 subject__box__para mb-1">
+                    <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                    </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fm">
+                        <span class="dark fw-semibold font-14">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-14">(50,355)</span>
+                      </div>
+
+                      <div class="fm d-flex align-items-center gap-3">
+                        <span class="dark fw-semibold">&#8358;5,000</span>
+                        <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                      </div>
+                    </div>
+
+                    <button class="heart-btn rounded-circle">
+                      <i class="fa-solid fa-heart fs-5"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+
+            <div class="px-2">
+              <div class="subject__box">
+                <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php1.png" alt="" class="img-fluid" /></a>
+
+                <div class="p-2">
+                  <a href="#" class="text-decoration-none dark color-hover">
+                    <h6 class="fs-6 fm main subject__box__heading mb-1">
+                      PHP with Laravel for beginners - Become a Master in Laravel
+                  </h6></a>
+                  <p class="fm dark font-12 subject__box__para mb-1">
+                    <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                    </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fm">
+                        <span class="dark fw-semibold font-14">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-14">(50,355)</span>
+                      </div>
+
+                      <div class="fm d-flex align-items-center gap-3">
+                        <span class="dark fw-semibold">&#8358;5,000</span>
+                        <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                      </div>
+                    </div>
+
+                    <button class="heart-btn rounded-circle">
+                      <i class="fa-solid fa-heart fs-5"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </section>
+
+      <!-- recommended topics-->
+      <section class="my-sm-5 my-4">
+        <div class="container-xl">
+          <h4 class="fs-5 fm main">Topics recommended for You</h4>
+          <div class="row pt-2 g-md-4 g-3">
+            <div class="col-md-3 col-sm-4">
+              <a href="#" class="text-decoration-none">
+                <button class="topic__btn fm dark w-100 font-18 text-capitalize">
+                  React Native
+                </button>
+              </a>
+            </div>
+
+            <div class="col-md-3 col-sm-4">
+              <a href="#" class="text-decoration-none">
+                <button class="topic__btn fm dark w-100 font-18 text-capitalize">
+                  Full Stack Web Development
+                </button>
+              </a>
+            </div>
+
+            <div class="col-md-3 col-sm-4">
+              <a href="#" class="text-decoration-none">
+                <button class="topic__btn fm dark w-100 font-18 text-capitalize">
+                  ReactJS
+                </button>
+              </a>
+            </div>
+
+            <div class="col-md-3 col-sm-4">
+              <a href="#" class="text-decoration-none">
+                <button class="topic__btn fm dark w-100 font-18 text-capitalize">
+                  Symfony
+                </button>
+              </a>
+            </div>
+
+            <div class="col-md-3 col-sm-4">
+              <a href="#" class="text-decoration-none">
+                <button class="topic__btn fm dark w-100 font-18 text-capitalize">
+                  Firebase
+                </button>
+              </a>
+            </div>
+
+            <div class="col-md-3 col-sm-4">
+              <a href="#" class="text-decoration-none">
+                <button class="topic__btn fm dark w-100 font-18 text-capitalize">
+                  VueJS
+                </button>
+              </a>
+            </div>
+
+            <div class="col-md-3 col-sm-4">
+              <a href="#" class="text-decoration-none">
+                <button class="topic__btn fm dark w-100 font-18 text-capitalize">
+                  React Native
+                </button>
+              </a>
+            </div>
+
+            <div class="col-md-3 col-sm-4">
+              <a href="#" class="text-decoration-none">
+                <button class="topic__btn fm dark w-100 font-18 text-capitalize">
+                  Google Flutter
+                </button>
+              </a>
+            </div>
+          </div>
+          </div>
+          </section>
+
+      <!-- info bottom-->
+      <section class="pb-3">
+        <div class="container-xl">
+          <div class="info bg-main py-3 px-lg-5 px-3 d-flex justify-content-between align-items-center flex-wrap gap-3">
+            <p class="fm mb-0 text-white">
+              Ready to start? Our Android & iOS Apps is actively a work in
+              progress!
+            </p>
+
+            <div class="d-flex gap-2">
+              <button class="bg-transparent border-0">
+                <img src="./assets/images/icons/googleplay.svg" alt="" />
+              </button>
+              <button class="bg-transparent border-0">
+                <img src="./assets/images/icons/appstore.svg" alt="" class="img-fluid" />
+              </button>
+            </div>
+            </div>
+            </div>
+            </section>
+
+      <!-- footer -->
+      <footer class="footer mt-md-5">
+        <section class="footer-top bg-dark py-3 border-bottom">
+          <div class="container-xl d-flex justify-content-between align-items-center gap-3 flex-wrap">
+            <p class="fm text-white mb-0 fs-5">
+              Best Supporters of EDULEXI for in-demand career skills.
+            </p>
+
+            <div class="d-flex flex-wrap">
+              <img src="./assets/images/icons/eventbrite.svg" alt="" class="footer-top__company1" />
+              <img src="./assets/images/icons/nasdaq.svg" alt="" class="footer-top__company2" />
+            </div>
+          </div>
+          </section>
+
+        <section class="footer-mid py-sm-5 py-4 bg-dark border-bottom">
+          <div class="container-xl">
+            <div class="row g-4">
+              <div class="col-lg-3 d-flex flex-column align-items-lg-center">
+                <a href="./index.html"><img src="./assets/images/logo-light.svg" alt="" class="footer__logo" /></a>
+
+                <div class="d-flex flex-column gap-3 mt-lg-4 mt-3">
+                  <a href="mailto:(234) 902-180-1802"
+                    class="text-decoration-none text-white fw-light transition d-flex align-items-center gap-3 fm">
+                    <i class="fa-regular fa-envelope fs-3"></i>
+                    address@gmail.com
+                  </a>
+                  <a href="tel:(234) 902-180-1802"
+                    class="text-decoration-none text-white fw-light transition d-flex align-items-center gap-3 me-4 fm">
+                    <i class="fa-brands fa-whatsapp fs-3"></i>
+                    (234) 902-180-1802
+                  </a>
+                </div>
+
+                <div class="d-flex gap-3 align-items-center mt-4">
+                  <a href="" class="text-white text-decoration-none d-flex align-items-center"><img
+                      src="./assets/images/icons/facebook.svg" alt="" class="social-icon" /></a>
+                  <a href="" class="text-white text-decoration-none d-flex align-items-center"><img
+                      src="./assets/images/icons/twitter.svg" alt="" class="social-icon" /></a>
+                  <a href="" class="text-white text-decoration-none d-flex align-items-center"><img
+                      src="./assets/images/icons/instagram.svg" alt="" class="social-icon" /></a>
+                  <a href="" class="text-white text-decoration-none d-flex align-items-center"><img
+                      src="./assets/images/icons/linkedin.svg" alt="" class="social-icon" /></a>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <h1 class="fm text-white fw-light text-lg-center fs-2">
+                  Category
+                </h1>
+
+                <ul class="d-flex flex-column list-unstyled mb-0 text-lg-center mt-3">
+                  <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Development</a>
+                  </li>
+                  <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Business</a>
+                  </li>
+                  <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Finance & Accounting</a>
+                  </li>
+                  <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">IT & Software</a>
+                  </li>
+                  <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Design</a>
+                  </li>
+                  <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Marketing</a>
+                  </li>
+                  <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Health & Fitness</a>
+                  </li>
+                  <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Music</a>
+                  </li>
+                  <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Office Productivity</a>
+                  </li>
+                </ul>
+                </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <h1 class="fm text-white fw-light text-lg-center fs-2">
+                  Quick Links
+                </h1>
+
+                <ul class="d-flex flex-column list-unstyled mb-0 text-lg-center mt-3">
+                  <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Terms of Service</a>
+                  </li>
+                  <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Become an Instructor</a>
+                  </li>
+                  <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Help & Support</a>
+                  </li>
+                  <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Sitemap</a>
+                  </li>
+                  <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Accessibility Statement</a>
+                  </li>
+                </ul>
+                </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6 d-flex flex-column align-items-lg-center">
+                <h1 class="fm text-white fw-light fs-2 mb-0">Subscribe</h1>
+                <p class="fm text-white fw-light mt-3 text-lg-center">
+                  To get updates, news, insights <br />and promotions
+                </p>
+
+                <input type="email" placeholder="Email" class="footer--input" />
+
+                <button class="border-white footer__btn bg-transparent text-white transition fm nowrap mt-3">
+                  Subscribe
+                </button>
+                </div>
+            </div>
+          </div>
+          </section>
+
+        <section class="footer-bottom bg-black py-2">
+          <div class="container-xl">
+            <p class="fm text-center text-white fw-light fm mb-0">
+              Copyright &copy; <span id="currentYear"></span> Edulexi, All
+              rights reserved
+            </p>
+          </div>
+        </section>
+      </footer>
+    </div>
+
+    <!-- search overlay -->
+    <div class="search__overlay" id="searchOverlay">
+      <section class="search__overlay__top py-3 border-bottom px-1">
+        <div class="container-xl d-flex align-items-center justify-content-between">
+          <div class="d-flex gap-3 align-items-center">
+            <i class="fa-solid fa-magnifying-glass fs-6 darkGrey"></i>
+            <input type="search" placeholder="Search for anything" class="search__overlay--input w-100" />
+          </div>
+          <i class="fa-solid fa-xmark darkGrey fs-5 pointer" id="closeSearch"></i>
+        </div>
+      </section>
+
+      <!-- for search results -->
+      <section class="search__overlay__bottom py-3 px-1">
+        <div class="container-xl">
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li class="dark fm"></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/vendors/jquery.min.js"></script>
+    <script src="./assets/vendors/slick-slider/slick/slick.min.js"></script>
+    <script src="./assets/js/common.js?v=1.0"></script>
+  </body>
+</html>

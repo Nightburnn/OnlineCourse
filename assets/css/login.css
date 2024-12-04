@@ -1,0 +1,300 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+       
+        /***********start from here****/
+.login-container .dont{
+    color: #26355D; font-size: 16px; font-family: 'Roboto'; font-weight: 800; text-decoration: underline;
+}
+        .login-container {
+      display: flex;
+      margin-bottom: 40px;
+      justify-content: center;
+      align-items: center;
+      min-height: 80vh;
+    }
+.login-container    .h2{
+        font-size: 24px;
+font-family: 'Roboto';
+color: #26355D;
+font-weight: 800;
+word-wrap: break-word;
+margin-bottom: 20px;
+    }
+ .login-container   .login-box {
+border: 2px solid #26355D;     
+ padding: 40px;
+      border-radius: 1px;
+    
+      display: flex;
+      max-width: 900px;
+      width: 100%;
+    }
+ .login-container   .login-image-container {
+      flex: 1;
+      padding-right: 20px;
+    }
+ .login-container   .login-image {
+      max-width: 100%;
+      margin-top: 30px;
+    }
+
+    .login-box form {
+      padding: 0 25px;
+  }
+ .login-container   .login-form-container {
+      flex: 1;
+      padding-left: 20px;
+    }
+   
+  .login-container .form-group{
+    border-radius: 14px; border: 1px solid #26355D;
+    padding: 5px;
+    margin-top: 30px;
+  }
+
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+ .login-container .form-control,  .login-container .input-group-text, .login-container .input-group-append{
+    background-color: transparent;
+    border: none;
+  }
+
+ .login-container i{
+    color: #26355D;
+  }
+ .login-container .form-control{
+padding: 10px 0;
+  }
+ .login-container .form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #ced4da; 
+  }
+ .login-container .input-group-text:focus, .login-container .btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+ .login-container .form-control::placeholder {
+    color: black;
+font-size: 16px;
+font-family: 'Roboto';
+font-weight: 400;
+  }
+ .login-container .form-control {
+    color: #000; 
+    font-weight: normal;
+  }
+
+   .login-container .text-muted{
+        color: #03001C; font-size: 15.84px; font-family: 'Roboto'; font-weight: 400;
+        text-decoration: none;
+    }
+
+    .login-container .text-muted:hover{
+        color: #26355D;
+        text-decoration: underline;
+    }
+    
+   .login-container .forgot-password {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+  .login-container  .btn {
+      border-radius: 30px;
+      padding: 10px 15px;
+    }
+   .login-container .btn-block{
+        background: #26355D; border-radius: 14px;
+        color: white;
+font-size: 24px;
+font-family: 'Roboto';
+font-weight: 700;
+width: 100%;
+    }
+
+  .login-container  .btn-block:hover{
+        background: #B1B0B8;
+        color: #26355D;
+    }
+  .login-container  .divider {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+    }
+   .login-container .divider hr {
+      flex-grow: 1;
+      border: none;
+      border-top: 1px solid #ccc;
+    }
+  .login-container  .divider span {
+      margin: 0 10px;
+      color: #03001C; font-size: 16px; font-family: 'Roboto'; font-weight: 400;
+    }
+ .login-container   .other-logins {
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      margin-bottom: 20px;
+    }
+  .login-container  .other-logins button {
+        border: 1.24px black solid;
+padding: 5px;
+              background: none;
+      cursor: pointer;
+      
+    }
+  .login-container  .other-logins img {
+      width: 30px;
+      height: 30px;
+    }
+  .login-container  .footer-text {
+      text-align: center;
+      margin-top: 10px;
+      color: #03001C; font-size: 16px; font-family: 'Roboto'; font-weight: 400;
+      background: #D9D9D9;
+    }
+ 
+    @media (max-width: 768px) {
+     .login-container .login-box {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        /*border: none;*/
+      }
+      .login-image-container {
+        display: none;
+      }
+      .login-container  .login-form-container {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    
+      .login-box form {
+        padding: 0;
+    }
+    }
+        
+    /****************sign up css********************/
+    .by{
+padding:0 3px;
+
+    }
+    .by p{
+        color: #03001C; font-size: 15px; font-family: 'Roboto'; font-weight: 400; margin: 0;
+    }
+
+    .term{
+        color: #03001C; font-size: 15px; font-family: 'Roboto'; font-weight: 400; text-decoration: underline;
+    }
+
+    .send {
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        color: #03001C; 
+        font-size: 15px; 
+        font-family: 'Roboto';
+         font-weight: 400;
+      }
+
+      .send .special-send{
+       
+        color: #03001C; 
+        font-size: 15px; 
+        font-family: 'Roboto';
+         font-weight: 400;
+      }
+      .send input[type="checkbox"] {
+        display: none;
+      }
+  
+      .custom-checkbox {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 14px;
+        cursor: pointer;
+        margin-right: 5px;
+      }
+  
+      .custom-checkbox .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #eee;
+        border: 1px solid #26355D;
+        border-radius: 1px;
+      }
+  
+      .send input[type="checkbox"]:checked + .custom-checkbox .checkmark {
+        background-color: #26355D; 
+      }
+  
+      .custom-checkbox .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+  
+      .send input[type="checkbox"]:checked + .custom-checkbox .checkmark:after {
+        display: block;
+      }
+  
+      .custom-checkbox .checkmark:after {
+        left: 6px;
+        top: 3px;
+        width: 6px;
+        height: 12px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+      }
+
+
+      /**************Forgot passowrd********/
+      .login-form-container .warn {
+        display: block;
+        margin: 0 auto 20px;
+        max-width: 50px; 
+    }
+
+   .back {
+        margin-right: 10px;
+        max-width: 10px; 
+        
+    }
+
+    .login-form-container h5{
+        text-align: center; color: #03001C; font-size: 16px; font-family: 'Roboto'; font-weight: 400; margin-bottom: 20px;
+        
+    }
+
+    .for{
+       
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            text-decoration: none;
+            width: 100%; 
+            color: #03001C; font-size: 16px; font-family: 'Roboto'; font-weight: 400;
+        
+    }
+
+    .for:hover{
+        color: #26355D;
+        text-decoration: underline;
+    }

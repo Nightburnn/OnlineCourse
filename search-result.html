@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+
+    <!-- slick-slider -->
+    <link rel="stylesheet" href="assets/vendors/slick-slider/slick/slick.css" />
+    <link rel="stylesheet" href="assets/vendors/slick-slider/slick/slick-theme.css" />
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./assets/vendors/fontawesome/css/all.min.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <link rel="stylesheet" href="./assets/css/searchResult.css" />
+
+    <title>EDULEXI</title>
+  </head>
+
+  <body>
+    <div id="main">
+      <!-- header logged In -->
+      <header class="header">
+        <section class="topnav bg-purple py-2 fm">
+          <div class="container-xl">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="fm white mb-0">All courses 20% off for Lagosians!</p>
+
+              <div class="d-md-flex d-none gap-lg-5">
+                <a href="tel:(234) 902-180-1802"
+                  class="text-decoration-none text-white transition d-flex align-items-center gap-2 me-4 fm">
+                  <i class="fa-brands fa-whatsapp fs-4"></i>
+                  (234) 902-180-1802
+                </a>
+
+                <a href="mailto:(234) 902-180-1802"
+                  class="text-decoration-none text-white transition d-flex align-items-center gap-2 fm">
+                  <i class="fa-regular fa-envelope fs-4"></i>
+                  address@gmail.com
+                </a>
+                </div>
+
+              <div class="d-md-flex d-none gap-2 align-items-center">
+                <a href="" class="text-white text-decoration-none d-flex align-items-center"><img
+                    src="./assets/images/icons/facebook.svg" alt="" class="social-icon" /></a>
+                <a href="" class="text-white text-decoration-none d-flex align-items-center"><img
+                    src="./assets/images/icons/twitter.svg" alt="" class="social-icon" /></a>
+                <a href="" class="text-white text-decoration-none d-flex align-items-center"><img
+                    src="./assets/images/icons/instagram.svg" alt="" class="social-icon" /></a>
+                <a href="" class="text-white text-decoration-none d-flex align-items-center"><img
+                    src="./assets/images/icons/linkedin.svg" alt="" class="social-icon" /></a>
+              </div>
+              </div>
+                </div>
+                </section>
+
+        <section class="midnav bg-white fm py-2">
+          <div class="container-xl py-1">
+            <div
+              class="d-flex align-items-center gap-lg-4 gap-3 justify-content-md-start justify-content-between"
+            >
+              <i
+                class="fa-solid fa-bars fs-5 me-4 d-md-none pointer-event"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvas1"
+                aria-controls="offcanvas1"
+              ></i>
+              <a href="./index.html">
+                <img src="./assets/images/logo.svg" alt="" class="logo" />
+              </a>
+
+              <div class="midnav__search d-md-flex d-none align-items-center gap-4">
+                <img src="./assets/images/icons/search.svg" alt="" class="" />
+                <input type="search" placeholder="Search for anything" id="input" class="midnav__search--input w-100" />
+                </div>
+
+              <div class="d-flex gap-xxl-5 gap-md-4">
+                <div class="d-flex align-items-center gap-3">
+                  <a href="./search-result.html" class="text-decoration-none main transition fm nowrap d-lg-block d-none">Create A
+                    Course</a>
+                  <a href="#" class="text-decoration-none main transition fm nowrap d-md-block d-none">My Learning</a>
+                  </div>
+
+                <div class="d-flex align-items-center gap-3">
+                  <i class="fa-solid fa-magnifying-glass fs-5 main pointer d-md-none" id="search"></i>
+                  <a href="#" class="text-decoration-none sup-outer d-md-block d-none"><img src="./assets/images/icons/heart.svg" alt=""
+                      class="icon-heart" />
+                    <sup class="sup">2</sup></a>
+                  <a href="#" class="text-decoration-none sup-outer"><img src="./assets/images/icons/cart.svg" alt="" class="icon-cart" />
+                    <sup class="sup">2</sup></a>
+
+                  <div class="dropdown">
+                    <button class="border-0 bg-transparent px-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <img src="./assets/images/icons/user.svg" alt="" class="user-loggedIn" />
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <a class="dropdown-item" href="#">Go to profile</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">My Wishlist</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Helpdesk</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Logout</a>
+                      </li>
+                    </ul>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </section>
+
+        <section class="bottomnav bg-dark py-2 d-md-block d-none position-relative">
+          <div class="container-xl">
+            <ul class="list-unstyled d-flex justify-content-around m-0">
+              <li class="text-white bottomnav__item pointer" data-target="development">
+                Development
+              </li>
+              <li class="text-white bottomnav__item pointer" data-target="business">
+                Business
+              </li>
+              <li class="text-white bottomnav__item pointer" data-target="finance">
+                Finance & Accounting
+              </li>
+              <li class="text-white bottomnav__item pointer" data-target="it">
+                IT & Software
+              </li>
+              <li class="text-white bottomnav__item pointer" data-target="design">
+                Design
+              </li>
+              <li class="text-white bottomnav__item pointer" data-target="marketing">
+                Marketing
+              </li>
+              <li class="text-white bottomnav__item pointer" data-target="health">
+                Health & Fitness
+              </li>
+              <li class="text-white bottomnav__item pointer" data-target="music">
+                Music
+              </li>
+              <li class="text-white bottomnav__item pointer" data-target="office">
+                Office Productivity
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <div class="dropnav py-2" id="development">
+            <div class="container-xl">
+              <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">Microsoft</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">Apple</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">Google</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">Oracle</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dropnav py-2" id="business">
+            <div class="container-xl">
+              <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">Business 1</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">business 2</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">business 3</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dropnav py-2" id="finance">
+            <div class="container-xl">
+              <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">finance 1</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">finance 2</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">finance 3</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dropnav py-2" id="it">
+            <div class="container-xl">
+              <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">it 1</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">it 2</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dropnav py-2" id="design">
+            <div class="container-xl">
+              <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">design 1</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">design 2</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dropnav py-2" id="marketing">
+            <div class="container-xl">
+              <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">marketing 1</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">marketing 2</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dropnav py-2" id="health">
+            <div class="container-xl">
+              <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">health 1</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">health 2</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dropnav py-2" id="music">
+            <div class="container-xl">
+              <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">music 1</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">music 2</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dropnav py-2" id="office">
+            <div class="container-xl">
+              <ul class="list-unstyled d-flex justify-content-center m-0 gap-5">
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">office 1</a>
+                </li>
+                <li class="text-black bottomnav__item">
+                  <a href="#" class="dropnav__item hover-purple text-decoration-none">office 2</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </section>
+
+        <!-- offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas1" aria-labelledby="offcanvas1Label"
+          data-bs-backdrop="true">
+          <button class="offcanvas-btn rounded-circle d-flex align-items-center justify-content-center"
+            data-bs-dismiss="offcanvas" aria-label="Close">
+            <i class="fa-solid fa-xmark darkGrey fs-5"></i>
+          </button>
+          <div class="position-relative overflow-hidden h-100">
+            <div class="offcanvas-body p-0 h-100">
+              <ul class="list-unstyled offcanvas-padding border-bottom mb-0">
+                <li class="mb-2">
+                  <a href="#" class="fm font-14 purple purple-hover text-decoration-none">Log In</a>
+                </li>
+                <li class="mb-1">
+                  <a href="#" class="fm font-14 purple purple-hover text-decoration-none">Sign Up</a>
+                </li>
+              </ul>
+
+              <div class="offcanvas-padding mt-1 border-bottom">
+                <p class="fm text-dark darkGrey fw-semibold font-12">
+                  Most Popular
+                </p>
+                <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                  <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuDevelopment">
+                    Development
+                    <i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+                  </li>
+                  <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuBusiness">
+                    Business<i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+                  </li>
+                  <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuAccounting">
+                    Finance & Accounting<i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+                  </li>
+                  <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuIT">
+                    IT & Software<i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+                  </li>
+                  <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuDesign">
+                    Design<i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+                  </li>
+                  <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuMarketing">
+                    Marketing<i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+                  </li>
+                  <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuHealth">
+                    Health & Fitness<i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+                  </li>
+                  <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuMusic">
+                    Music<i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+                  </li>
+                  <li class="fm d-flex align-items-center justify-content-between dark font-14 pointer" id="menuOffice">
+                    Office Productivity<i class="fa-solid fa-chevron-right font-12 icon-arrow"></i>
+                  </li>
+                  </ul>
+                  </div>
+
+              <div class="offcanvas-padding mt-2">
+                <p class="fm text-dark darkGrey fw-semibold font-12">Other</p>
+                <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                  <li>
+                    <a href="#" class="fm font-14 dark text-decoration-none">Wishlist</a>
+                  </li>
+                  <li>
+                    <a href="#" class="fm font-14 dark text-decoration-none">Cart</a>
+                  </li>
+                  <li>
+                    <a href="#" class="fm font-14 dark text-decoration-none">My Learning</a>
+                  </li>
+                  <li>
+                    <a href="./search-result.html" class="fm font-14 dark text-decoration-none">Create a Course</a>
+                    </li>
+                    </ul>
+                    </div>
+                    </div>
+
+            <!-- overlay menu -->
+            <div class="offcanvas-overlay position-absolute bg-white fm" id="overlayMenu">
+              <div class="d-flex gap-3 offcanvas-padding py-3 align-items-center offcanvas-overlay__top">
+                <i class="fa-solid fa-chevron-left pointer" id="backButton"></i>
+                <p class="fm dark font-14 mb-0">Menu</p>
+              </div>
+
+              <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="developmentMenu">
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Microsoft</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Apple</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Google</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Oracle</a>
+                </li>
+              </ul>
+
+              <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="businessMenu">
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Business 1</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Business 2</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Business 3</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Business 4</a>
+                </li>
+              </ul>
+
+              <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="accountingMenu">
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Accounting 1</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Accounting 2</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Accounting 3</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Accounting 4</a>
+                </li>
+              </ul>
+
+              <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="itMenu">
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">IT 1</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">IT 2</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">IT 3</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">IT 4</a>
+                </li>
+              </ul>
+
+              <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="designMenu">
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Design 1</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Design 2</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Design 3</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Design 4</a>
+                </li>
+              </ul>
+
+              <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="marketingMenu">
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Marketing 1</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Marketing 2</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Marketing 3</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Marketing 4</a>
+                </li>
+              </ul>
+
+              <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="healthMenu">
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Health 1</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Health 2</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Health 3</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Health 4</a>
+                </li>
+              </ul>
+
+              <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="musicMenu">
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Music 1</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Music 2</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Music 3</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Music 4</a>
+                </li>
+              </ul>
+
+              <ul class="list-unstyled mb-0 offcanvas-padding flex-column gap-2" id="officeMenu">
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Office 1</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Office 2</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Office 3</a>
+                </li>
+                <li>
+                  <a href="#" class="fm font-14 dark text-decoration-none">Office 4</a>
+                </li>
+              </ul>
+              </div>
+              </div>
+              </div>
+              </header>
+
+      <!-- Search Results -->
+      <section class="search-result">
+        <div class="container-xl py-5">
+          <div class="d-flex justify-content-end">
+            <button class="fm dark bg-transparent px-0 border-0 fw-semibold font-18 mb-3">
+              Clear Filters
+            </button>
+          </div>
+          <div class="d-flex flex-lg-row flex-column gap-lg-4 gap-0">
+            <!-- left - filters -->
+            <section class="search-result__left">
+              <h4 class="main fs-2 fm fw-semibold pb-3">
+                2,500 results for “php”
+              </h4>
+
+              <div class="d-flex gap-3 border-bottom-dark pb-3">
+                <div class="dropdown">
+                  <button class="white--btn border-dark transition fm fw-semibold text-dark nowrap" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false" id="dropdownFilter">
+                    <img src="./assets/images/icons/filter.svg" alt="" />
+                    Filter
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownFilter">
+                    <li class="dropdown-item pointer">Filter 1</li>
+                    <li class="dropdown-item pointer">Filter 2</li>
+                    <li class="dropdown-item pointer">Filter 3</li>
+                  </ul>
+                  </div>
+
+                <select class="form-select pointer dark" aria-label="Default select example">
+                  <option selected class="fm dark">Most Relevant</option>
+                  <option value="1" class="fm dark">Most Recent</option>
+                </select>
+                </div>
+
+              <div class="border-bottom-dark py-3">
+                <h6 class="font-20 fm main fw-semibold">Ratings</h6>
+                <ul class="list-unstyled mb-0">
+                  <li class="fm form-check">
+                    <input class="form-check-input pointer" type="radio" name="rating" id="radio1" />
+                    <label class="form-check-label pointer ms-1" for="radio1">
+                      <i class="fa-solid fa-star icon-star"></i>
+                      <i class="fa-solid fa-star icon-star"></i>
+                      <i class="fa-solid fa-star icon-star"></i>
+                      <i class="fa-solid fa-star icon-star"></i>
+                      <i class="fa-solid fa-star icon-star"></i>
+
+                      <span class="dark font-14 pointer">4.5 & up <span class="darkGrey">(2,165)</span></span>
+                      </label>
+                      </li>
+
+                  <li class="fm form-check">
+                    <input class="form-check-input pointer" type="radio" name="rating" id="radio2" />
+                    <label class="form-check-label pointer ms-1" for="radio2">
+                      <i class="fa-solid fa-star icon-star"></i>
+                      <i class="fa-solid fa-star icon-star"></i>
+                      <i class="fa-solid fa-star icon-star"></i>
+                      <i class="fa-solid fa-star icon-star"></i>
+                      <i class="fa-solid fa-star icon-star"></i>
+
+                      <span class="dark font-14 pointer">4.0 & up <span class="darkGrey">(2,165)</span></span>
+                      </label>
+                      </li>
+
+                  <li class="fm form-check">
+                    <input class="form-check-input pointer" type="radio" name="rating" id="radio3" />
+                    <label class="form-check-label pointer ms-1" for="radio3">
+                      <i class="fa-solid fa-star icon-star"></i>
+                      <i class="fa-solid fa-star icon-star"></i>
+                      <i class="fa-solid fa-star icon-star"></i>
+                      <i class="fa-solid fa-star icon-star"></i>
+                      <i class="fa-solid fa-star icon-star"></i>
+
+                      <span class="dark font-14 pointer">3.5 & up <span class="darkGrey">(2,165)</span></span>
+                      </label>
+                      </li>
+
+                  <li class="fm form-check">
+                    <input class="form-check-input pointer" type="radio" name="rating" id="radio4" />
+                    <label class="form-check-label pointer ms-1" for="radio4">
+                      <i class="fa-solid fa-star icon-star"></i>
+                      <i class="fa-solid fa-star icon-star"></i>
+                      <i class="fa-solid fa-star icon-star"></i>
+                      <i class="fa-solid fa-star icon-star"></i>
+                      <i class="fa-solid fa-star icon-star"></i>
+
+                      <span class="dark font-14 pointer">3.0 & up <span class="darkGrey">(2,165)</span></span>
+                      </label>
+                      </li>
+                      </ul>
+                      </div>
+
+              <div class="border-bottom-dark py-3">
+                <h6 class="font-20 fm main fw-semibold">Levels</h6>
+                <ul class="list-unstyled mb-0">
+                  <li class="fm form-check">
+                    <input class="form-check-input pointer" type="radio" name="level" id="level1" />
+                    <label class="form-check-label pointer ms-1 dark font-14" for="level1">
+                      All Levels <span class="darkGrey">(2,165)</span>
+                    </label>
+                  </li>
+                  <li class="fm form-check">
+                    <input class="form-check-input pointer" type="radio" name="level" id="level2" />
+                    <label class="form-check-label pointer ms-1 dark font-14" for="level2">
+                      Beginners <span class="darkGrey">(2,165)</span>
+                    </label>
+                  </li>
+                  <li class="fm form-check">
+                    <input class="form-check-input pointer" type="radio" name="level" id="level3" />
+                    <label class="form-check-label pointer ms-1 dark font-14" for="level3">
+                      Intermediate <span class="darkGrey">(2,165)</span>
+                    </label>
+                  </li>
+                  <li class="fm form-check">
+                    <input class="form-check-input pointer" type="radio" name="level" id="level4" />
+                    <label class="form-check-label pointer ms-1 dark font-14" for="level4">
+                      Expert <span class="darkGrey">(2,165)</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="py-3">
+                <h6 class="font-20 fm main fw-semibold">Price</h6>
+                <ul class="list-unstyled mb-0">
+                  <li class="fm form-check">
+                    <input class="form-check-input pointer" type="radio" name="price" id="price1" />
+                    <label class="form-check-label pointer ms-1 dark font-14" for="price1">
+                      Paid <span class="darkGrey">(2,165)</span>
+                    </label>
+                  </li>
+                  <li class="fm form-check">
+                    <input class="form-check-input pointer" type="radio" name="price" id="price2" />
+                    <label class="form-check-label pointer ms-1 dark font-14" for="price2">
+                      Free <span class="darkGrey">(2,165)</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+                    </section>
+
+            <!-- right - results -->
+            <section class="search-result__right">
+              <div class="border-bottom-dark pb-3">
+                <div
+                  class="search-result__right__box d-flex justify-content-start flex-sm-row flex-column gap-3 mt-3"
+                >
+                <a href="#" class="search-result__right__box--img"> <img
+                    src="./assets/images/subjects/php1.png"
+                    alt=""
+                    class="search-result__right__box--img img-fluid"
+                  /></a>
+                 
+
+                  <div class="d-flex gap-2 flex-xl-row flex-column">
+                    <div class="">
+                      <a href="#" class="text-decoration-none dark color-hover">
+                        <h5 class="font-18 fm main">
+                          PHP From Scratch 2024 | Beginner To Advanced
+                      </h5></a>
+                      <p class="font-14 fm dark mb-0">
+                        Learn PHP fundamentals then build a job listing website
+                        from the ground up, using a Laravel-like infrastructure
+                      </p>
+                      <p class="fm darkGrey font-14 mb-0">Brad Traversy</p>
+                      <div class="fm mb-1">
+                        <span class="dark fw-semibold font-12">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-12">(50,355)</span>
+                      </div>
+                      <p class="font-12 fm dark mb-1">
+                        18.5 total hours | 135 lectures | All Levels
+                      </p>
+                      <div class="font-12 text-white bg-pink px-2 py-1 d-inline">
+                        Bestseller
+                      </div>
+                      </div>
+
+                    <div class="d-flex flex-xl-column justify-content-between align-items-end">
+                      <div>
+                        <p class="fm main fw-semibold font-18 mb-0 text-end">
+                          &#8358;4,900
+                        </p>
+                        <p class="fm darkGrey fw-semibold font-18 mb-0 text-end">
+                          &#8358;<span class="text-decoration-line-through">7,900</span>
+                        </p>
+                      </div>
+
+                      <div class="d-flex gap-2">
+                        <button class="heart-btn rounded-circle">
+                          <i class="fa-solid fa-heart fs-5"></i>
+                        </button>
+                        <button class="red-cart">
+                          <span class="sup-outer"><img src="./assets/images/icons/cart-white.svg" alt="" class="icon-cart" /><sup
+                              class="sup transition">+</sup></span>
+                          </button>
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+
+              <div class="border-bottom-dark py-3">
+                <div
+                  class="search-result__right__box d-flex justify-content-start flex-sm-row flex-column gap-3 mt-3"
+                >
+                <a href="#" class="search-result__right__box--img">
+                  <img
+                    src="./assets/images/subjects/php2.png"
+                    alt=""
+                    class="search-result__right__box--img img-fluid"
+                  />
+                </a>
+                  
+
+                  <div class="d-flex gap-2 flex-xl-row flex-column">
+                    <div class="">
+                      <a href="#" class="text-decoration-none dark color-hover">
+                        <h5 class="font-18 fm main">
+                          PHP From Scratch 2024 | Beginner To Advanced
+                      </h5></a>
+                      <p class="font-14 fm dark mb-0">
+                        Learn PHP fundamentals then build a job listing website
+                        from the ground up, using a Laravel-like infrastructure
+                      </p>
+                      <p class="fm darkGrey font-14 mb-0">Brad Traversy</p>
+                      <div class="fm mb-1">
+                        <span class="dark fw-semibold font-12">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-12">(50,355)</span>
+                      </div>
+                      <p class="font-12 fm dark mb-1">
+                        18.5 total hours | 135 lectures | All Levels
+                      </p>
+                      <div class="font-12 text-white bg-pink px-2 py-1 d-inline">
+                        Bestseller
+                      </div>
+                      </div>
+
+                    <div class="d-flex flex-xl-column justify-content-between align-items-end">
+                      <div>
+                        <p class="fm main fw-semibold font-18 mb-0 text-end">
+                          &#8358;4,900
+                        </p>
+                        <p class="fm darkGrey fw-semibold font-18 mb-0 text-end">
+                          &#8358;<span class="text-decoration-line-through">7,900</span>
+                        </p>
+                      </div>
+
+                      <div class="d-flex gap-2">
+                        <button class="heart-btn rounded-circle">
+                          <i class="fa-solid fa-heart fs-5"></i>
+                        </button>
+                        <button class="red-cart">
+                          <span class="sup-outer"><img src="./assets/images/icons/cart-white.svg" alt="" class="icon-cart" /><sup
+                              class="sup transition">+</sup></span>
+                          </button>
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+
+              <div class="border-bottom-dark py-3">
+                <div
+                  class="search-result__right__box d-flex justify-content-start flex-sm-row flex-column gap-3 mt-3"
+                >
+                <a href="#" class="search-result__right__box--img">
+                 <img
+                    src="./assets/images/subjects/php3.png"
+                    alt=""
+                    class="search-result__right__box--img img-fluid"
+                  />
+ 
+                </a>
+                  
+                  <div class="d-flex gap-2 flex-xl-row flex-column">
+                    <div class="">
+                      <a href="#" class="text-decoration-none dark color-hover">
+                        <h5 class="font-18 fm main">
+                          PHP From Scratch 2024 | Beginner To Advanced
+                      </h5></a>
+                      <p class="font-14 fm dark mb-0">
+                        Learn PHP fundamentals then build a job listing website
+                        from the ground up, using a Laravel-like infrastructure
+                      </p>
+                      <p class="fm darkGrey font-14 mb-0">Brad Traversy</p>
+                      <div class="fm mb-1">
+                        <span class="dark fw-semibold font-12">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-12">(50,355)</span>
+                      </div>
+                      <p class="font-12 fm dark mb-1">
+                        18.5 total hours | 135 lectures | All Levels
+                      </p>
+                      <div class="font-12 text-white bg-pink px-2 py-1 d-inline">
+                        Bestseller
+                      </div>
+                      </div>
+
+                    <div class="d-flex flex-xl-column justify-content-between align-items-end">
+                      <div>
+                        <p class="fm main fw-semibold font-18 mb-0 text-end">
+                          &#8358;4,900
+                        </p>
+                        <p class="fm darkGrey fw-semibold font-18 mb-0 text-end">
+                          &#8358;<span class="text-decoration-line-through">7,900</span>
+                        </p>
+                      </div>
+
+                      <div class="d-flex gap-2">
+                        <button class="heart-btn rounded-circle">
+                          <i class="fa-solid fa-heart fs-5"></i>
+                        </button>
+                        <button class="red-cart">
+                          <span class="sup-outer"><img src="./assets/images/icons/cart-white.svg" alt="" class="icon-cart" /><sup
+                              class="sup transition">+</sup></span>
+                          </button>
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+
+              <div class="border-bottom-dark py-3">
+                <div
+                  class="search-result__right__box d-flex justify-content-start flex-sm-row flex-column gap-3 mt-3"
+                >
+                <a href="#" class="search-result__right__box--img">
+
+                 <img
+                    src="./assets/images/subjects/php4.png"
+                    alt=""
+                    class="search-result__right__box--img img-fluid"
+                  /> 
+                </a>
+                  
+
+                  <div class="d-flex gap-2 flex-xl-row flex-column">
+                    <div class="">
+                      <a href="#" class="text-decoration-none dark color-hover">
+                        <h5 class="font-18 fm main">
+                          PHP From Scratch 2024 | Beginner To Advanced
+                      </h5></a>
+                      <p class="font-14 fm dark mb-0">
+                        Learn PHP fundamentals then build a job listing website
+                        from the ground up, using a Laravel-like infrastructure
+                      </p>
+                      <p class="fm darkGrey font-14 mb-0">Brad Traversy</p>
+                      <div class="fm mb-1">
+                        <span class="dark fw-semibold font-12">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-12">(50,355)</span>
+                      </div>
+                      <p class="font-12 fm dark mb-1">
+                        18.5 total hours | 135 lectures | All Levels
+                      </p>
+                      <div class="font-12 text-white bg-pink px-2 py-1 d-inline">
+                        Bestseller
+                      </div>
+                      </div>
+
+                    <div class="d-flex flex-xl-column justify-content-between align-items-end">
+                      <div>
+                        <p class="fm main fw-semibold font-18 mb-0 text-end">
+                          &#8358;4,900
+                        </p>
+                        <p class="fm darkGrey fw-semibold font-18 mb-0 text-end">
+                          &#8358;<span class="text-decoration-line-through">7,900</span>
+                        </p>
+                      </div>
+
+                      <div class="d-flex gap-2">
+                        <button class="heart-btn rounded-circle">
+                          <i class="fa-solid fa-heart fs-5"></i>
+                        </button>
+                        <button class="red-cart">
+                          <span class="sup-outer"><img src="./assets/images/icons/cart-white.svg" alt="" class="icon-cart" /><sup
+                              class="sup transition">+</sup></span>
+                          </button>
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+
+              <div class="border-bottom-dark py-3">
+                <div
+                  class="search-result__right__box d-flex justify-content-start flex-sm-row flex-column gap-3 mt-3"
+                >
+                <a href="#" class="search-result__right__box--img">
+                 <img
+                    src="./assets/images/subjects/php5.png"
+                    alt=""
+                    class="search-result__right__box--img img-fluid"
+                  /> 
+                </a>
+                  
+
+                  <div class="d-flex gap-2 flex-xl-row flex-column">
+                    <div class="">
+                      <a href="#" class="text-decoration-none dark color-hover">
+                        <h5 class="font-18 fm main">
+                          PHP From Scratch 2024 | Beginner To Advanced
+                      </h5></a>
+                      <p class="font-14 fm dark mb-0">
+                        Learn PHP fundamentals then build a job listing website
+                        from the ground up, using a Laravel-like infrastructure
+                      </p>
+                      <p class="fm darkGrey font-14 mb-0">Brad Traversy</p>
+                      <div class="fm mb-1">
+                        <span class="dark fw-semibold font-12">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-12">(50,355)</span>
+                      </div>
+                      <p class="font-12 fm dark mb-1">
+                        18.5 total hours | 135 lectures | All Levels
+                      </p>
+                      <div class="font-12 text-white bg-pink px-2 py-1 d-inline">
+                        Bestseller
+                      </div>
+                      </div>
+
+                    <div class="d-flex flex-xl-column justify-content-between align-items-end">
+                      <div>
+                        <p class="fm main fw-semibold font-18 mb-0 text-end">
+                          &#8358;4,900
+                        </p>
+                        <p class="fm darkGrey fw-semibold font-18 mb-0 text-end">
+                          &#8358;<span class="text-decoration-line-through">7,900</span>
+                        </p>
+                      </div>
+
+                      <div class="d-flex gap-2">
+                        <button class="heart-btn rounded-circle">
+                          <i class="fa-solid fa-heart fs-5"></i>
+                        </button>
+                        <button class="red-cart">
+                          <span class="sup-outer"><img src="./assets/images/icons/cart-white.svg" alt="" class="icon-cart" /><sup
+                              class="sup transition">+</sup></span>
+                          </button>
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+
+              <!-- freshly baked courses -->
+              <section class="subject py-3 border-bottom-dark">
+                <h4 class="fs-5 main fm mb-3 px-xl-2">
+                  Freshly Baked Courses for You
+                </h4>
+                <div class="slick2" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
+                  <div class="px-2">
+                    <div class="border-dark">
+                      <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php1.png" alt="" class="img-fluid" /></a>
+
+                      <div class="p-2">
+                        <a href="#" class="text-decoration-none dark color-hover">
+                          <h6 class="font-14 fm main subject__box__heading mb-1">
+                            PHP with Laravel for beginners - Become a Master in
+                            Laravel
+                        </h6></a>
+                        <p class="fm dark font-12 subject__box__para mb-1">
+                          <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                          </p>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <div class="fm">
+                              <span class="dark fw-semibold font-14">4.5</span>
+                              <i class="fa-solid fa-star icon-star"></i>
+                              <i class="fa-solid fa-star icon-star"></i>
+                              <i class="fa-solid fa-star icon-star"></i>
+                              <i class="fa-solid fa-star icon-star"></i>
+                              <i class="fa-solid fa-star icon-star"></i>
+                              <span class="dark font-14">(50,355)</span>
+                            </div>
+
+                            <div class="fm d-flex align-items-center gap-3">
+                              <span class="dark fw-semibold">&#8358;5,000</span>
+                              <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                              </div>
+                              </div>
+
+                          <button class="heart-btn rounded-circle">
+                            <i class="fa-solid fa-heart fs-5"></i>
+                          </button>
+                          </div>
+                          <div class="dark fm new-tag fw-semibold text-center mt-1">New</div>
+                          </div>
+                          </div>
+                          </div>
+
+                  <div class="px-2">
+                    <div class="border-dark">
+                      <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php2.png" alt="" class="img-fluid" /></a>
+
+                      <div class="p-2">
+                        <a href="#" class="text-decoration-none dark color-hover">
+                          <h6 class="font-14 fm main subject__box__heading mb-1">
+                            PHP with Laravel for beginners - Become a Master in
+                            Laravel
+                        </h6></a>
+                        <p class="fm dark font-12 subject__box__para mb-1">
+                          <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                          </p>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <div class="fm">
+                              <span class="dark fw-semibold font-14">4.5</span>
+                              <i class="fa-solid fa-star icon-star"></i>
+                              <i class="fa-solid fa-star icon-star"></i>
+                              <i class="fa-solid fa-star icon-star"></i>
+                              <i class="fa-solid fa-star icon-star"></i>
+                              <i class="fa-solid fa-star icon-star"></i>
+                              <span class="dark font-14">(50,355)</span>
+                            </div>
+
+                            <div class="fm d-flex align-items-center gap-3">
+                              <span class="dark fw-semibold">&#8358;5,000</span>
+                              <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                              </div>
+                              </div>
+
+                          <button class="heart-btn rounded-circle">
+                            <i class="fa-solid fa-heart fs-5"></i>
+                          </button>
+                          </div>
+                          <div class="dark fm new-tag fw-semibold text-center mt-1">New</div>
+                          </div>
+                          </div>
+                          </div>
+
+                  <div class="px-2">
+                    <div class="border-dark">
+                      <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php3.png" alt="" class="img-fluid" /></a>
+
+                      <div class="p-2">
+                        <a href="#" class="text-decoration-none dark color-hover">
+                          <h6 class="font-14 fm main subject__box__heading mb-1">
+                            PHP with Laravel for beginners - Become a Master in
+                            Laravel
+                        </h6></a>
+                        <p class="fm dark font-12 subject__box__para mb-1">
+                          <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                          </p>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <div class="fm">
+                              <span class="dark fw-semibold font-14">4.5</span>
+                              <i class="fa-solid fa-star icon-star"></i>
+                              <i class="fa-solid fa-star icon-star"></i>
+                              <i class="fa-solid fa-star icon-star"></i>
+                              <i class="fa-solid fa-star icon-star"></i>
+                              <i class="fa-solid fa-star icon-star"></i>
+                              <span class="dark font-14">(50,355)</span>
+                            </div>
+
+                            <div class="fm d-flex align-items-center gap-3">
+                              <span class="dark fw-semibold">&#8358;5,000</span>
+                              <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                              </div>
+                              </div>
+
+                          <button class="heart-btn rounded-circle">
+                            <i class="fa-solid fa-heart fs-5"></i>
+                          </button>
+                          </div>
+                          <div class="dark fm new-tag fw-semibold text-center mt-1">New</div>
+                          </div>
+                          </div>
+                          </div>
+
+                  <div class="px-2">
+                    <div class="border-dark">
+                      <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php4.png" alt="" class="img-fluid" /></a>
+
+                      <div class="p-2">
+                        <a href="#" class="text-decoration-none dark color-hover">
+                          <h6 class="font-14 fm main subject__box__heading mb-1">
+                            PHP with Laravel for beginners - Become a Master in
+                            Laravel
+                        </h6></a>
+                        <p class="fm dark font-12 subject__box__para mb-1">
+                          <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                          </p>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <div class="fm">
+                              <span class="dark fw-semibold font-14">4.5</span>
+                              <i class="fa-solid fa-star icon-star"></i>
+                              <i class="fa-solid fa-star icon-star"></i>
+                              <i class="fa-solid fa-star icon-star"></i>
+                              <i class="fa-solid fa-star icon-star"></i>
+                              <i class="fa-solid fa-star icon-star"></i>
+                              <span class="dark font-14">(50,355)</span>
+                            </div>
+
+                            <div class="fm d-flex align-items-center gap-3">
+                              <span class="dark fw-semibold">&#8358;5,000</span>
+                              <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                              </div>
+                              </div>
+
+                          <button class="heart-btn rounded-circle">
+                            <i class="fa-solid fa-heart fs-5"></i>
+                          </button>
+                          </div>
+                          <div class="dark fm new-tag fw-semibold text-center mt-1">New</div>
+                          </div>
+                          </div>
+                          </div>
+
+                  <div class="px-2">
+                    <div class="border-dark">
+                      <a href="#" class="text-decoration-none"><img src="./assets/images/subjects/php5.png" alt="" class="img-fluid" /></a>
+
+                      <div class="p-2">
+                        <a href="#" class="text-decoration-none dark color-hover">
+                          <h6 class="font-14 fm main subject__box__heading mb-1">
+                            PHP with Laravel for beginners - Become a Master in
+                            Laravel
+                        </h6></a>
+                        <p class="fm dark font-12 subject__box__para mb-1">
+                          <a href="#" class="text-decoration-none dark color-hover">Edwin Hazard</a>, Coding Faculty Solutions
+                          </p>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <div class="fm">
+                              <span class="dark fw-semibold font-14">4.5</span>
+                              <i class="fa-solid fa-star icon-star"></i>
+                              <i class="fa-solid fa-star icon-star"></i>
+                              <i class="fa-solid fa-star icon-star"></i>
+                              <i class="fa-solid fa-star icon-star"></i>
+                              <i class="fa-solid fa-star icon-star"></i>
+                              <span class="dark font-14">(50,355)</span>
+                            </div>
+
+                            <div class="fm d-flex align-items-center gap-3">
+                              <span class="dark fw-semibold">&#8358;5,000</span>
+                              <span>&#8358;<span class="text-decoration-line-through">8,500</span></span>
+                              </div>
+                              </div>
+
+                          <button class="heart-btn rounded-circle">
+                            <i class="fa-solid fa-heart fs-5"></i>
+                          </button>
+                          </div>
+                          <div class="dark fm new-tag fw-semibold text-center mt-1">New</div>
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+                          </section>
+
+              <div class="border-bottom-dark py-3">
+                <div
+                  class="search-result__right__box d-flex justify-content-start flex-sm-row flex-column gap-3 mt-3"
+                >
+                <a href="#" class="search-result__right__box--img">
+                   <img
+                    src="./assets/images/subjects/php6.png"
+                    alt=""
+                    class="search-result__right__box--img img-fluid"
+                  />
+                </a>
+                 
+
+                  <div class="d-flex gap-2 flex-xl-row flex-column">
+                    <div class="">
+                      <a href="#" class="text-decoration-none dark color-hover">
+                        <h5 class="font-18 fm main">
+                          PHP From Scratch 2024 | Beginner To Advanced
+                      </h5></a>
+                      <p class="font-14 fm dark mb-0">
+                        Learn PHP fundamentals then build a job listing website
+                        from the ground up, using a Laravel-like infrastructure
+                      </p>
+                      <p class="fm darkGrey font-14 mb-0">Brad Traversy</p>
+                      <div class="fm mb-1">
+                        <span class="dark fw-semibold font-12">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-12">(50,355)</span>
+                      </div>
+                      <p class="font-12 fm dark mb-1">
+                        18.5 total hours | 135 lectures | All Levels
+                      </p>
+                      <div class="font-12 text-white bg-pink px-2 py-1 d-inline">
+                        Bestseller
+                      </div>
+                      </div>
+
+                    <div class="d-flex flex-xl-column justify-content-between align-items-end">
+                      <div>
+                        <p class="fm main fw-semibold font-18 mb-0 text-end">
+                          &#8358;4,900
+                        </p>
+                        <p class="fm darkGrey fw-semibold font-18 mb-0 text-end">
+                          &#8358;<span class="text-decoration-line-through">7,900</span>
+                        </p>
+                      </div>
+
+                      <div class="d-flex gap-2">
+                        <button class="heart-btn rounded-circle">
+                          <i class="fa-solid fa-heart fs-5"></i>
+                        </button>
+                        <button class="red-cart">
+                          <span class="sup-outer"><img src="./assets/images/icons/cart-white.svg" alt="" class="icon-cart" /><sup
+                              class="sup transition">+</sup></span>
+                          </button>
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+
+              <div class="border-bottom-dark py-3">
+                <div
+                  class="search-result__right__box d-flex justify-content-start flex-sm-row flex-column gap-3 mt-3"
+                >
+                <a href="#" class="search-result__right__box--img">
+                  <img
+                    src="./assets/images/subjects/php7.png"
+                    alt=""
+                    class="search-result__right__box--img img-fluid"
+                  />
+                </a>
+                  
+
+                  <div class="d-flex gap-2 flex-xl-row flex-column">
+                    <div class="">
+                      <a href="#" class="text-decoration-none dark color-hover">
+                        <h5 class="font-18 fm main">
+                          PHP From Scratch 2024 | Beginner To Advanced
+                      </h5></a>
+                      <p class="font-14 fm dark mb-0">
+                        Learn PHP fundamentals then build a job listing website
+                        from the ground up, using a Laravel-like infrastructure
+                      </p>
+                      <p class="fm darkGrey font-14 mb-0">Brad Traversy</p>
+                      <div class="fm mb-1">
+                        <span class="dark fw-semibold font-12">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-12">(50,355)</span>
+                      </div>
+                      <p class="font-12 fm dark mb-1">
+                        18.5 total hours | 135 lectures | All Levels
+                      </p>
+                      <div class="font-12 text-white bg-pink px-2 py-1 d-inline">
+                        Bestseller
+                      </div>
+                      </div>
+
+                    <div class="d-flex flex-xl-column justify-content-between align-items-end">
+                      <div>
+                        <p class="fm main fw-semibold font-18 mb-0 text-end">
+                          &#8358;4,900
+                        </p>
+                        <p class="fm darkGrey fw-semibold font-18 mb-0 text-end">
+                          &#8358;<span class="text-decoration-line-through">7,900</span>
+                        </p>
+                      </div>
+
+                      <div class="d-flex gap-2">
+                        <button class="heart-btn rounded-circle">
+                          <i class="fa-solid fa-heart fs-5"></i>
+                        </button>
+                        <button class="red-cart">
+                          <span class="sup-outer"><img src="./assets/images/icons/cart-white.svg" alt="" class="icon-cart" /><sup
+                              class="sup transition">+</sup></span>
+                          </button>
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+
+              <div class="border-bottom-dark py-3">
+                <div
+                  class="search-result__right__box d-flex justify-content-start flex-sm-row flex-column gap-3 mt-3"
+                >
+                <a href="#" class="search-result__right__box--img">
+                 <img
+                    src="./assets/images/subjects/php8.png"
+                    alt=""
+                    class="search-result__right__box--img img-fluid"
+                  /> 
+                </a>
+                  
+
+                  <div class="d-flex gap-2 flex-xl-row flex-column">
+                    <div class="">
+                      <a href="#" class="text-decoration-none dark color-hover">
+                        <h5 class="font-18 fm main">
+                          PHP From Scratch 2024 | Beginner To Advanced
+                      </h5></a>
+                      <p class="font-14 fm dark mb-0">
+                        Learn PHP fundamentals then build a job listing website
+                        from the ground up, using a Laravel-like infrastructure
+                      </p>
+                      <p class="fm darkGrey font-14 mb-0">Brad Traversy</p>
+                      <div class="fm mb-1">
+                        <span class="dark fw-semibold font-12">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-12">(50,355)</span>
+                      </div>
+                      <p class="font-12 fm dark mb-1">
+                        18.5 total hours | 135 lectures | All Levels
+                      </p>
+                      <div class="font-12 text-white bg-pink px-2 py-1 d-inline">
+                        Bestseller
+                      </div>
+                      </div>
+
+                    <div class="d-flex flex-xl-column justify-content-between align-items-end">
+                      <div>
+                        <p class="fm main fw-semibold font-18 mb-0 text-end">
+                          &#8358;4,900
+                        </p>
+                        <p class="fm darkGrey fw-semibold font-18 mb-0 text-end">
+                          &#8358;<span class="text-decoration-line-through">7,900</span>
+                        </p>
+                      </div>
+
+                      <div class="d-flex gap-2">
+                        <button class="heart-btn rounded-circle">
+                          <i class="fa-solid fa-heart fs-5"></i>
+                        </button>
+                        <button class="red-cart">
+                          <span class="sup-outer"><img src="./assets/images/icons/cart-white.svg" alt="" class="icon-cart" /><sup
+                              class="sup transition">+</sup></span>
+                          </button>
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+
+              <div class="border-bottom-dark py-3">
+                <div
+                  class="search-result__right__box d-flex justify-content-start flex-sm-row flex-column gap-3 mt-3"
+                >
+                <a href="#" class="search-result__right__box--img">
+                 <img
+                    src="./assets/images/subjects/php9.png"
+                    alt=""
+                    class="search-result__right__box--img img-fluid"
+                  /> 
+                </a>
+                  
+
+                  <div class="d-flex gap-2 flex-xl-row flex-column">
+                    <div class="">
+                      <a href="#" class="text-decoration-none dark color-hover">
+                        <h5 class="font-18 fm main">
+                          PHP From Scratch 2024 | Beginner To Advanced
+                      </h5></a>
+                      <p class="font-14 fm dark mb-0">
+                        Learn PHP fundamentals then build a job listing website
+                        from the ground up, using a Laravel-like infrastructure
+                      </p>
+                      <p class="fm darkGrey font-14 mb-0">Brad Traversy</p>
+                      <div class="fm mb-1">
+                        <span class="dark fw-semibold font-12">4.5</span>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <span class="dark font-12">(50,355)</span>
+                      </div>
+                      <p class="font-12 fm dark mb-1">
+                        18.5 total hours | 135 lectures | All Levels
+                      </p>
+                      <div class="font-12 text-white bg-pink px-2 py-1 d-inline">
+                        Bestseller
+                      </div>
+                      </div>
+
+                    <div class="d-flex flex-xl-column justify-content-between align-items-end">
+                      <div>
+                        <p class="fm main fw-semibold font-18 mb-0 text-end">
+                          &#8358;4,900
+                        </p>
+                        <p class="fm darkGrey fw-semibold font-18 mb-0 text-end">
+                          &#8358;<span class="text-decoration-line-through">7,900</span>
+                        </p>
+                      </div>
+
+                      <div class="d-flex gap-2">
+                        <button class="heart-btn rounded-circle">
+                          <i class="fa-solid fa-heart fs-5"></i>
+                        </button>
+                        <button class="red-cart">
+                          <span class="sup-outer"><img src="./assets/images/icons/cart-white.svg" alt="" class="icon-cart" /><sup
+                              class="sup transition">+</sup></span>
+                          </button>
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+
+              <!-- pagination -->
+              <div class="pagination mt-5 d-flex justify-content-center align-items-center gap-3">
+                <button class="pagination-prev pagination-btn">
+                  <img src="./assets/images/icons/prev-main.svg" alt="" class="me-1" />
+                </button>
+                <span class="fm main fw-semibold">1 OF 2</span>
+                <button class="pagination-prev pagination-btn">
+                  <img src="./assets/images/icons/next-main.svg" alt="" class="ms-1" />
+                </button>
+                </div>
+                </section>
+                </div>
+                </div>
+                </section>
+
+      <!-- info bottom-->
+      <section class="pb-3">
+        <div class="container-xl">
+          <div
+            class="info bg-main py-3 px-lg-5 px-3 d-flex justify-content-between align-items-center flex-wrap gap-3"
+          >
+            <p class="fm mb-0 text-white">
+              Ready to start? Our Android & iOS Apps is actively a work in
+              progress!
+            </p>
+
+            <div class="d-flex gap-2">
+              <button class="bg-transparent border-0">
+                <img src="./assets/images/icons/googleplay.svg" alt="" />
+              </button>
+              <button class="bg-transparent border-0">
+                <img src="./assets/images/icons/appstore.svg" alt="" class="img-fluid" />
+              </button>
+            </div>
+                </div>
+                </div>
+                </section>
+
+      <!-- footer -->
+      <footer class="footer mt-md-5">
+        <section class="footer-top bg-dark py-3 border-bottom">
+          <div class="container-xl d-flex justify-content-between align-items-center gap-3 flex-wrap">
+            <p class="fm text-white mb-0 fs-5">
+              Best Supporters of EDULEXI for in-demand career skills.
+            </p>
+
+            <div class="d-flex flex-wrap">
+              <img src="./assets/images/icons/eventbrite.svg" alt="" class="footer-top__company1" />
+              <img src="./assets/images/icons/nasdaq.svg" alt="" class="footer-top__company2" />
+            </div>
+            </div>
+            </section>
+
+        <section class="footer-mid py-sm-5 py-4 bg-dark border-bottom">
+          <div class="container-xl">
+            <div class="row g-4">
+              <div class="col-lg-3 d-flex flex-column align-items-lg-center">
+                <a href="./index.html"><img src="./assets/images/logo-light.svg" alt="" class="footer__logo" /></a>
+                <div class="d-flex flex-column gap-3 mt-lg-4 mt-3">
+                  <a href="mailto:(234) 902-180-1802"
+                    class="text-decoration-none text-white fw-light transition d-flex align-items-center gap-3 fm">
+                    <i class="fa-regular fa-envelope fs-3"></i>
+                    address@gmail.com
+                  </a>
+                  <a href="tel:(234) 902-180-1802"
+                    class="text-decoration-none text-white fw-light transition d-flex align-items-center gap-3 me-4 fm">
+                    <i class="fa-brands fa-whatsapp fs-3"></i>
+                    (234) 902-180-1802
+                  </a>
+                </div>
+
+                <div class="d-flex gap-3 align-items-center mt-4">
+                  <a href="" class="text-white text-decoration-none d-flex align-items-center"><img
+                      src="./assets/images/icons/facebook.svg" alt="" class="social-icon" /></a>
+                  <a href="" class="text-white text-decoration-none d-flex align-items-center"><img
+                      src="./assets/images/icons/twitter.svg" alt="" class="social-icon" /></a>
+                  <a href="" class="text-white text-decoration-none d-flex align-items-center"><img
+                      src="./assets/images/icons/instagram.svg" alt="" class="social-icon" /></a>
+                  <a href="" class="text-white text-decoration-none d-flex align-items-center"><img
+                      src="./assets/images/icons/linkedin.svg" alt="" class="social-icon" /></a>
+                </div>
+                </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <h1 class="fm text-white fw-light text-lg-center fs-2">
+                  Category
+                </h1>
+
+                <ul class="d-flex flex-column list-unstyled mb-0 text-lg-center mt-3">
+                  <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Development</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Business</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Finance & Accounting</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">IT & Software</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Design</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Marketing</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Health & Fitness</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Music</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Office Productivity</a>
+                    </li>
+                    </ul>
+                    </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <h1 class="fm text-white fw-light text-lg-center fs-2">
+                  Quick Links
+                </h1>
+
+                <ul class="d-flex flex-column list-unstyled mb-0 text-lg-center mt-3">
+                  <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Privacy Policy</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Terms of Service</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Become an Instructor</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Help & Support</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Sitemap</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fm text-white text-decoration-none fw-light underline-hover transition">Accessibility Statement</a>
+                    </li>
+                    </ul>
+                    </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6 d-flex flex-column align-items-lg-center">
+                <h1 class="fm text-white fw-light fs-2 mb-0">Subscribe</h1>
+                <p class="fm text-white fw-light mt-3 text-lg-center">
+                  To get updates, news, insights <br />and promotions
+                </p>
+
+                <input type="email" placeholder="Email" class="footer--input" />
+
+                <button
+                  class="border-white footer__btn bg-transparent text-white transition fm nowrap mt-3"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="footer-bottom bg-black py-2">
+          <div class="container-xl">
+            <p class="fm text-center text-white fw-light fm mb-0">
+              Copyright &copy; <span id="currentYear"></span> Edulexi, All
+              rights reserved
+            </p>
+          </div>
+        </section>
+        </footer>
+    </div>
+    <!-- search overlay -->
+    <div class="search__overlay" id="searchOverlay">
+      <section class="search__overlay__top py-3 border-bottom px-1">
+        <div class="container-xl d-flex align-items-center justify-content-between">
+          <div class="d-flex gap-3 align-items-center">
+            <i class="fa-solid fa-magnifying-glass fs-6 darkGrey"></i>
+            <input type="search" placeholder="Search for anything" class="search__overlay--input w-100" />
+          </div>
+          <i class="fa-solid fa-xmark darkGrey fs-5 pointer" id="closeSearch"></i>
+        </div>
+      </section>
+
+      <!-- for search results -->
+      <section class="search__overlay__bottom py-3 px-1">
+        <div class="container-xl">
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li class="dark fm"></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/vendors/jquery.min.js"></script>
+    <script src="./assets/vendors/slick-slider/slick/slick.min.js"></script>
+    <script src="./assets/js/common.js?v=1.0"></script>
+  </body>
+</html>
